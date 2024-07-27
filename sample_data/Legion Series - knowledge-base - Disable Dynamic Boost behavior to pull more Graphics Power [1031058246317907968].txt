@@ -1,0 +1,55 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Disable Dynamic Boost behavior to pull more Graphics Power
+==============================================================
+
+[10/16/2022 9:47 AM] nonkerdoob
+This will work on Gen 7 Legions with 3060 and above. Gen 6 owners may need a VBIOS flash from Gen 7 Legion to make use of this. VBIOS Guide - https://discord.com/channels/761178912230473768/1020993103403954176
+
+**Using Powershell**
+1. Open Start > Powershell > Open as Admin
+2. Run these commands
+
+To Switch to Custom Mode
+```(Get-WmiObject -namespace ROOT\WMI -class LENOVO_GAMEZONE_DATA).SetSmartFanMode(255)```
+To set cTGP, replace ``Value`` with the value that you want to use. Refer table below if you need maximum values.
+```(Get-WmiObject -namespace ROOT\WMI -class LENOVO_GPU_METHOD).GPU_Set_cTGP_PowerLimit(Value)```
+Additionally if you need max fans as it will increase temps - 
+```(Get-WmiObject -namespace ROOT\WMI -class LENOVO_FAN_METHOD).Fan_Set_FullSpeed(1)```
+Change the 1 to 0 to disable max fans.
+
+**With Legion Toolkit**
+1. Download and Install latest stable version of #legion-toolkit from the Github releases page
+2. Set Power Mode > Custom
+3. Click on the Cogwheel icon that appears to the left of the dropdown
+4. Scroll down and change Maximum Offset to set higher cTGP values
+5. Slide to the new higher cTGP value, refer table below if you want the maximum, click on Apply to commit the changes.
+
+The idea: 
+Your GPU TGP is Base + cTGP + PPAB. The OEM decides on the cTGP and PPAB values according to nvidia spec. cTGP is often dynamically changed to offer different power modes. If we are to take the 3070 in a Legion 5 Pro Gen 6, they would be:
+
+Silent Mode: 115 + 0 + 0 = 115w
+Performance Mode: 115 + 10 + 15 = 140w
+
+PPAB is popularly known as Dynamic Boost and is the extra power that is pulled if the CPU is under a certain power draw. Legion Gen 6 with latest BIOS Updates and Legion  Gen 7 offer a hidden Custom power mode that cannot be accessed with Fn+Q that lets you configure these values. If you change the cTGP to take up the PPAB, you will be effectively disabling Dynamic Boost behavior.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1031058246317907968/1031058246758314144/unknown.png?ex=661b58d2&is=6608e3d2&hm=1e24df0838a29afa4c0a2f83317a7d5854823fdda3784a7d80b66f5f72a7a773&
+https://cdn.discordapp.com/attachments/1031058246317907968/1031058248578637864/unknown.png?ex=661b58d2&is=6608e3d2&hm=5e62f851157427d034217966be75c90f397f8cc85afbeea9767439cacd583152&
+https://cdn.discordapp.com/attachments/1031058246317907968/1031058249027432478/unknown.png?ex=661b58d2&is=6608e3d2&hm=46ed1358d1e6157e32c9429779eb97ef99137eeea105e85a1fa1496fb628a377&
+
+{Reactions}
+👍 (4) daveyes pogomega 🤔 
+
+[10/18/2022 4:06 PM] nonkerdoob
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1031058246317907968/1031878472139817000/unknown.png?ex=661e54b7&is=660bdfb7&hm=de6ffe30628efce8da63cdce2ea1824c25307aa57d5f395b24f4de95a93284d5&
+
+{Reactions}
+🤔 
+
+==============================================================
+Exported 2 message(s)
+==============================================================

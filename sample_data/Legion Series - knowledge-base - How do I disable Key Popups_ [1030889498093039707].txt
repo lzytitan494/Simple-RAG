@@ -1,0 +1,30 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / How do I disable Key Popups?
+==============================================================
+
+[10/15/2022 10:36 PM] nonkerdoob
+**In Lenovo Hotkeys App**
+Go to Settings > Disable CapsLk / NumLock OSD.
+
+**With Legion Toolkit**
+Go to Settings > Disable Hotkeys 
+
+**Remove Pop Ups completely without Toolkit**
+1. Open start menu and search for services.msc
+2. Find Lenovo Fn and function keys service
+3. Double click on the service, or you can right click the service and press properties
+4. Change Startup type to Disabled
+5. Afterwards, if the service hasn't stopped, click stop
+6. Don't forget to disable Lenovo Hotkeys in Task Manager -> Startup
+
+and you're done. Note that this will also disable Fn lock popup and FN+Q popup as it disables the entire Lenovo Hotkeys application.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1030889498093039707/1030889498248220733/unknown.png?ex=661abba9&is=660846a9&hm=0f381f19873686abd834b4af6bbfc85eaa688225b826538f7140cdb16f483d09&
+https://cdn.discordapp.com/attachments/1030889498093039707/1030889498579583016/unknown.png?ex=661abba9&is=660846a9&hm=e1c0bcdbeb083181c4fc3de2c7aebe0c278b666bd2f5df6bfa54d7136ebc17bd&
+
+
+==============================================================
+Exported 1 message(s)
+==============================================================

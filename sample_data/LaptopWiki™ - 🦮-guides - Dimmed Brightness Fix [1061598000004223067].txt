@@ -1,0 +1,50 @@
+==============================================================
+Guild: LaptopWiki™
+Channel: --> Start Here / 🦮-guides / Dimmed Brightness Fix
+==============================================================
+
+[1/8/2023 4:21 PM] ru1n.
+# LATER EDIT: Latest BIOS UPDATE (GKCN64WW) FIXES THIS PROBLEM COMPLETELY!
+
+
+Fixing the dim brightness/broken brightness curve after certain nvidia driver install. (for example 80% brightness feels like a 20% after the install)
+
+How did it happen:
+
+For these specific panels (you can check your panel/monitor name in hwinfo): BOE0985, BOE0A40, CSO1600, CSO1609, brightness calibration data registry keys have been removed from the section of Lenovo 3070 specific configurations in the driver inf. starting with 511.65 driver.
+
+**The calibration data registry will be uploaded at the bottom of this post. It is extracted from the 511.23 driver (in which brightness curve is perfect).**
+
+If you get "permission denied" when you try to import the reg file, you need to give full access right to administrator(s) group for the path below in regedit:
+**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\State\DisplayDatabase**
+
+(Right click on DisplayDatabase folder and click on Permissions)
+• **MAKE SURE TO RESTART YOUR SYSTEM for the changes to work.**
+• Keep in mind that any clean install of a driver, any DDU will REMOVE this registry key from your system so your screen might get dim again. In case it does, use this fix again.
+
+*credits to: @asderdd[TR][L5P 5800H 3070 32GB] for the fix!*
+
+• The second way of fixing this, if the above method does not work for you is downloading and clean installing a driver that does not cause the brightness to be dim, then on top of it installing the newer one that you planned to use without using the "clean" install checkbox within the nvidia installer. As example: you DDU your current driver - > install 511.23 - > install 527.56 (without clean install) - > brightness should not have any dim issues.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1061598000004223067/1061598000272646144/sdasda.png?ex=661bb52e&is=6609402e&hm=1e1b6c71a793280465302312ba73c65cbb5111c4d6c3d887690b5e2face67690&
+
+
+[1/8/2023 4:25 PM] kirakenchin
+Changed the channel name: Dim Brightness Fix
+
+
+[1/8/2023 4:25 PM] kirakenchin
+Changed the channel name: Dimmed Brightness Fix
+
+
+[1/25/2023 11:21 PM] ru1n.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1061598000004223067/1067864374741569646/BrightnessCalibrationData.reg?ex=6616d1b2&is=66045cb2&hm=b11659a0b16bae69a660d095d054571d1ded998d485f0bb855b20d45da9cf198&
+
+
+==============================================================
+Exported 4 message(s)
+==============================================================

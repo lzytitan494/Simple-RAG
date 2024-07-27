@@ -1,0 +1,75 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / GhostFellas' basic recommendations list
+==============================================================
+
+[9/12/2023 8:10 PM] ghostfella
+***The following is just a basic list of settings that you can use for either Performance or Battery life.
+You are free to set stuff according to your preferences.***
+
+### ----------------------------------------
+## Basic performance settings
+
+**Power modes and Power plan**
+1. Plugged in
+2. Legion power mode set to `Performance` mode (Fn+Q to red LED)
+3. Windows power plan set to `Balanced` (Windows default)
+4. To set power mode:
+ - W11 - Inside Windows Settings > Power & Battery, set Power mode to `Best performance`
+ - W10 - Click on Battery icon in taskbar and pull slider to the right
+
+**Nvidia**
+1. GPU recommended drivers in https://discord.com/channels/761178912230473768/1044177430644019240
+2. **Do not install GeForce Experience**
+
+**Side notes**
+1. Clean the device regularly! Make sure your intake/fans and exhaust fins are dust or lint free and not blocked.
+2. For highest performance, while plugged in, use `Hybrid off (dGPU only)` mode + `Conservation mode ON` (to protect battery health)
+3. Make sure it's not on a flat desk, use a stand or a cooling pad (IETS, Klim or custom made):
+ - Basic stand, eg. <https://www.amazon.com/dp/B0BGS42MPR>
+ - IETS GT600, GT500, GT300 - <https://www.youtube.com/watch?v=SZ8-VBYxPzE>
+ - Klim Everest - <https://www.youtube.com/watch?v=Ie7PkzmJXCo>
+ - Custom cooler with Noctua fans <https://www.hardwareluxx.de/community/threads/lenovo-legion-5-pro-legion-7-optimierung-ram-overclocking-undervolting-repaste-mods.1305245/> (2 > 2.6 DIY cooler Noctua)
+4. Use Lenovo Legion Toolkit (⁠⁠https://discord.com/channels/761178912230473768/990345635075084298 / https://github.com/BartoszCichecki/LenovoLegionToolkit) instead of Vantage and to disable updates inside Vantage. LLT is easier on the PC, uses less RAM and CPU, has same functionalities as Vantage (drivers/updates, hybrid mode controls, fan control,...), LegionZone + more.
+
+### ----------------------------------------
+## Basic battery life settings
+
+**Power modes and Power plan**
+1. Legion power mode set to `Quiet` mode (Fn+Q to blue LED)
+2. Windows power plan set to `Balanced` (Windows default)
+3. To set power mode:
+ - W11 - Inside Windows Settings > Power & Battery,  set Power mode to `Best power efficiency`
+ - W10 - Click on Battery icon in taskbar and pull slider to the left
+
+**Hybrid mode/GPU Working mode**
+1. Set:
+ - Hybrid mode (**Gen 6 and older**) to `Hybrid ON`
+ - GPU Working Mode (**Gen 7 and newer**) to `Hybrid - iGPU` or `Hybrid - Auto`. Your dGPU *has* to disappear when in either of these two modes.
+ - Read more about Hybrid modes - https://discord.com/channels/761178912230473768/1126463470875971614
+
+**Nvidia**
+1. **Do not install and if you did, remove GeForce Experience**, users that have GeForce Experience can experience issues with dGPU drawing power for no reason - https://discord.com/channels/761178912230473768/1044177430644019240/1193677533640675419
+2. Gen 7 and Gen 8 users - Read more about dGPU being stuck in `Hybrid - iGPU`/`Hybrid - Auto` mode - https://discord.com/channels/761178912230473768/761183696421519361/1151965446510227576
+
+**Optional (but highly recommended)**
+1. Disable CPU Boost Mode for DC/battery using PowerSettingsExplorer (Processor Performance Boost Mode set to Disabled) (<https://forums.guru3d.com/threads/windows-power-plan-settings-explorer-utility.416058/>)
+2. 60Hz refresh rate (Fn+R)
+3. Low display brightness (50% or below)
+4. No keyboard backlight 
+5. No port lights (Fn+U)
+
+** Read more about battery life and power plans**
+1. https://discord.com/channels/761178912230473768/1088813221596627045
+2. https://discord.com/channels/761178912230473768/1083396445983477880
+
+{Reactions}
+ghost (17) chad (9) 👍 
+
+[12/19/2023 6:27 PM] ghostfella
+Changed the channel name: GhostFellas' basic recommendations list
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

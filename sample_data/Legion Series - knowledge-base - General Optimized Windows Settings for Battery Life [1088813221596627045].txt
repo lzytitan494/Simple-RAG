@@ -1,0 +1,48 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / General Optimized Windows Settings for Battery Life
+==============================================================
+
+[3/24/2023 6:45 PM] n.vuz
+***Disclaimer: For Legion users with Gen 7 and up, if you only see Balanced Power Plan in Power Options then be sure that it is working as expected, Power Plan governing has been transferred to Windows as the expected effect of S0 Sleep State - Modern Standby***
+
+These are the *base minimum settings* for people who wants to get more **battery life** out of their laptops without having to deep-dive into any higher-level tweaking nuisance.
+
+**__1__. Make sure your laptop is on Hybrid Mode in Legion Toolkit settings or Vantage if you're still using it (Close Vantage after use, it could wake up your dGPU periodically and suck power).**
+**OPTIONAL:** 
++ For Gen 6 users that only has the default Hybrid Mode available to them, monitor the **dGPU Power Down state** could be the difference between 2hrs and 10hrs battery life, either through Legion Toolkit main menu or for updated versions of Windows taskbar, hover your pointer over Toolkit icon on the taskbar to pop up its widget, for best battery possible the dGPU should be listed as ***Inactive + Powered Down*** or just ***Powered Down***, refer to the 2 images below.
++ For Gen 7 and up, a special kind of Hybrid Mode called Hybrid-iGPU is available to users that will guarantee the disabled state of the dGPU as long as it is in effect. Ideally this mode would be automatically triggered when users are on Hybrid-Auto and boot the laptop from battery, or can be manually switched to from other Hybrid Mode(s) without having to reboot.
+
+**__2__. Set Screen Refresh rate to 60Hz** (If your laptop doesnt have it enabled at default, refer to **Add 60hz or New Refresh Rates to Legion** down in #knowledge-base *bottom*).
+
+**__3__. Set Power Mode to Quiet Mode (blue power button).**
+**OPTIONAL:** Furthermore, for settings number **2.** and **3.**, can be set to be triggered as automated tasks in Legion Toolkit *when laptop is disconnected from power source*. 
+
+**__4__. Switch to Best Power Efficiency mode in Windows Settings by Right Click on Battery icon > Power and sleep settings. You can set this mode individually on Battery or Plugged in and Windows will remember it.**
+
+**__5__. On the same window as step 4, set Battery Saver mode to trigger Always as it will kick in automatically when on battery.**
+
+**__6__. Open *Search Bar > Startup Apps*, *CLOSE* all unnecessary apps that you knoww you wont be using or dont need to run on computer start-up, doing this will reduce significant amount of background services eating up resources.**
+
+**__7__. In terms of browser, Edge(*Chromium*) is probably one of your saving grace when it comes to power management. So if you wanna squeeze more battery life, use Edge and its efficiency mode + sleeping tabs feature.**
+
+**OPTIONAL __8__:** Disable **CPU Boost Mode** while on Battery to limit CPU power consumption, relate to "Boost Mode in Power Plan settings" entry down the #knowledge-base list. 
+
+__**P/S:**__ Should additional battery life be need, consider *higher-level tweaking* and check out Kuri's post on **Custom Windows power plans**. And if you're crazy enough and want to squeeze every last drop of your battery, refer to **How to make a Debloated ISO** and create your very own Windows Debloated Image. All down the #knowledge-base list.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1088813221596627045/1088819105487925348/image.png?ex=66193950&is=6606c450&hm=93135dc3e599b55da2121c19bb4407e1802ab32eb4757addd5e073931f19b717&
+
+{Reactions}
+upvote (7) 🔥 (13) 🔋 (5) 
+
+[3/24/2023 7:29 PM] n.vuz
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1088813221596627045/1088824418182123590/image.png?ex=66193e42&is=6606c942&hm=27be7b0df5ad28a4fedc8e91bff8951fbb510b01d0c1dfa4deb664566f5932c1&
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

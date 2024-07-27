@@ -1,0 +1,408 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / The 3rd party Power Delivery (PD) charger & battery bank guide (NOT a buying list).
+==============================================================
+
+[11/9/2022 10:41 PM] not_nhan
+The **stock** 300W/ 230W charger is a brick. Many owners are looking into PD charger (or battery bank) alternatives to top up the machine on the go. This guide will provide some guidance on which charger should work and which will not. 
+
+The requirement for PD charging your Legion:
+> - Your Legion must be **Gen 6** or newer. (How to identify gen: 15ACH***6***H, the ***6*** means Gen 6). **Max input via PD 3.0 is 100W.**
+> 
+> - Only rear Type C port support PD charging. On Legion Slim 7/7i model, both Type C port should accept PD charging. Find port which is marked "USB-PD".
+> 
+> - Charger must provide at least 45W (20V 2.25A) to charge Legion while OFF/Sleep. Can use non E-marker cable.
+> 
+> - Charger must provide at least 65W (20V 3.25A) to charge Legion while ON. **MUST use cable with E-marker.**
+> 
+> - Recommend to use 100W E-marker cable with all charger to maximise compatibility. 
+> 
+> - **Expect the machine to behave as if on battery (or some case slightly slower). PD charger when in use would have the same power limits as if running on battery (or lower, depends on charger).** Performance mode and Custom mode will not be available.
+> 
+> - Also expect not to run heavy workload on the machine. Rule of thumb is not to run any task that will demand full power from the dGPU like gaming. Surfing the web, reading documents should be fine. If you do plan to game, game on the iGPU.
+
+Some common problems with PD charger:
+> - Machine does not charge at all: Some PD charger would plain refuse to charge the Legion. Again, double check the required specification including Voltage/Amps, and E-marker Cable.
+> 
+> - Some charger will not provide full power if not plugged in the right port or the charger is also being shared with other devices. Consult charger's manual for information on this.
+> 
+> - Charger continuously connect and disconnect: This is a usual trait when running too high of a load on the machine while on PD charger. Consider to turn off the game or application that is running.
+
+(Continues below).
+
+{Reactions}
+👍 (21) pogberry (2) 
+
+[11/9/2022 10:51 PM] not_nhan
+**The Lenovo GAN C135 135W Type C charger:** (Applies with new GAN C140 140W chager for gen 8)
+> The Lenovo 135W Type C charger should be able to charge Gen 7 and newer Legion at 135W through the Type C port. ~~No confirmation for charge rate on Gen 6. ~~ 
+> 
+> It is confirmed by users, using the Type C to Slim-tip included with the charger and newest bios at the time (57WW for majority of Legion Gen 6, your bios name might be different), the Legion Gen 6 does charge at 135W. Still only 100W charging through Type C on Legion Gen 6.
+> 
+> ***Because this charger 135W/140W specs does not conform to PD 3.1 EDR Specs, other high power PD 3.1 charger on the market will be capped at 100W charge rate.***
+> ***(Only Lenovo cable only work with Lenovo charger for 135W/140W, so don't bother asking.)***
+> 
+> (Lenovo specs: 20V@6.75-7A)
+> (PD 3.1 EDR 140W specs: 28V@5A)
+> (Very incompatible.)
+> 
+> Added: Similar to gen 7, Only gen 8 would be able to take full advantage of the new 140W type C charger. Gen 7 would charge at 135W with that charger.
+> 
+> Addendum: 140W Lenovo Gan charger only output 100W (Both PD and Lenovo specs) for country with 110VAC, example include US/Canada/Japan.
+
+
+[11/9/2022 10:55 PM] not_nhan
+**SlimQ 240W & 330W charger:**
+> As the SlimQ 240W & 330W charger charge the Legion via the DC slim tip port, it can provide the full power the Legion needs, essentially a replacement for the stock charger.
+> 
+> Personally I recommend to choose the SlimQ charger based on the stock charger you have with the device:
+> **Stock 230W -> SlimQ 240W
+> Stock 300W -> SlimQ 330W**
+> 
+> This is only a recommendation on how to determine which model is best for your Legion, not an Endorsement of SlimQ products.
+> 
+> As always you can use bigger charger than stock.
+> 
+> Addendum: SlimQ 240W Type C port is not particularly good. It can top up your laptop but not sustained a gaming load. Tested by @thAw [14APH8] .
+
+{Reactions}
+👍 
+
+[11/9/2022 10:58 PM] not_nhan
+A reminder, on PD charging, the laptop will have a "Low wattage AC adapter" warning at boot up and in Windows, the battery will report as "Slow Charging."
+
+New update: apparently, some chargers, albeit not rated 65W, could still charge the laptop while on, but windows will not show as "Charging" or even "Slow Charging". Still, if you're buying a new charger, it's recommended to get a 65W charger or better.
+
+
+[11/9/2022 10:59 PM] not_nhan
+(Reserved space)
+
+
+[11/10/2022 1:18 AM] not_nhan
+Below should be the list of Charger/ Battery Bank that is reportedly tested by user. Only charger greater than 65W be in this list. 
+
+The list should also include charger that does work, for reasons or another, including bad units or cables.
+While it may mark as does not work here, but works for you or vice versa, ping us to add your info into the post.
+
+Comment would include:
+
+> Recommend?
+> Image
+> Charger name
+> Charger model number
+> Charger charge rate
+> Cable tested with
+> Laptop tested on
+> Did it charge?: *(yes or no)*
+> Noted behaviour: *(when under load or if the charger needs reconnect after plugging in another device etc)*
+
+
+[11/10/2022 2:19 AM] not_nhan
+**About E-marker Cable: **
+
+E-marker is a chip that lives inside the cable that helps device recognise the capability of the cable, including data speed and rated power transfer. 
+
+Cable rated for 60W USB2.0 and below is not required to have E-marker chip, but also means these cable would not charge the Legion when it's powered ON (power negotiation is based on the lowest common denominator).
+
+Thus it is recommend to use E-Marker 100W cable from known brands for maximum compatibility. Optionally, you could pick cable that allows higher rate data transfer or display output for different use case.
+
+Because the chip inside the cable, the only way to identify the cable rated wattage is via an expensive tester. 
+As an end-user, double check the spec sheet and product listing before buying one.
+
+P/S: Too long of an cable also cause no charging as the cable total resistant is too much, causing too high of a V-droop. Cable around 1 meter in length is recommended.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1040005192487272579/unknown.png?ex=6616fb50&is=66048650&hm=263596bd6f2dc254d86ca914c63383669fe8ea5ec3f03bde009bc7b5ac5ada5f&
+
+
+[11/11/2022 9:35 AM] not_nhan
+Charger name: Anker GaN Prime 140W
+Charger model number: 717
+Charger charge rate: 100W
+Cable tested with https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx
+Laptop tested on: Lenovo Legion 7i Gen 7
+Did it charge?:  Yes
+Noted behaviour:  None
+by @Eugene
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1040477314594644048/unknown.png?ex=6618b302&is=66063e02&hm=134898c7ccf6806157552bf2da6bac9bc3b8b068c2b7aa174cc6e2f1e2412420&
+
+
+[11/14/2022 4:39 AM] .thread
+Charger name: Apple 140W Charger
+Charger model number: MLYU3AM/A
+Charger charge rate: 100W
+Cable tested with https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx AND Apple Original PD3.1 Cable
+Laptop tested on: Lenovo Legion 7i 
+Gen 7
+Did it charge?:  Yes
+Noted behaviour:  None
+
+{Embed}
+https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx
+40Gbps Thunderbolt 4 USB C Cable with 100W Charging
+Active Thunderbolt 4 Cable is the most advanced and one of the longest Thunderbolt cables available today.
+https://images-ext-1.discordapp.net/external/J4KVLhFutzfyIWwXqWnfqvMmJ9pizkj8OeraG0KwH5Y/https/www.cablematters.com/images/Product/large/1283.jpg
+
+
+[12/18/2022 7:11 PM] not_nhan
+Charger name: OnePlus Warp Charge 
+Charger model number: WC065A31JH, WC065A41JH
+Charger charge rate: 45W on Legion
+Cable tested with stock OnePlus cable
+Laptop tested on: Lenovo Legion 5 Pro Gen 6
+Did it charge?:  Yes, however.... 
+Noted behavior:  Laptop does not show as charging by the laptop, however as noted by users, it still slow charging to certain extend. Only suitable for very light work like web surfing or Youtube.
+by @Miniterror L5P/5800H/3070 @Animesenpai 
+https://www.oneplus.com/us/product/oneplus-warp-charge-65-power-adapter
+
+{Embed}
+https://www.oneplus.com/us/product/oneplus-warp-charge-65-power-adapter
+OnePlus Warp Charge 65 Power Adapter NA
+https://images-ext-1.discordapp.net/external/2ODcEhOmPOxA-wCdpGPeAR8YpxFgkpVCn-ntGFvXB2U/https/www.oneplus.com/content/dam/oasis/page/common/logo/OnePlus_Logo.png
+
+
+[1/27/2023 8:08 AM] .thread
+Charger name: Baseus 140W Charger
+Charger model number: CCGAN140CS 
+Charger charge rate: 
+C1, 20V5A PDO, 98W,
+C2 20V5A PDO, 97W
+Cable tested with https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx, Apple Original PD3.1 USBC cable, Included USBC cable, DPZZ USB-IF Certified USB4 PD3.1 USBC Cable
+Laptop tested on: Lenovo Legion 7 AMD Gen 7
+Did it charge?:  Yes
+Noted behaviour:  Voltage close to out of USB Type C Rev. 2.2 Spec
+
+{Embed}
+https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx,
+Cables, Adapters, & Docking Stations: USB-C, Thunderbolt 3, Display...
+Cable Matters provides a large selection of innovative cables and accessories, we also educate consumers on the best product offerings. USB C, Thunderbolt 3, DisplayPort, HDMI, DVI, VGA, USB, SATA, SAS, Ethernet, Networking, AV, Power, bulk cables, docking stations, power cords, patch cables, and more.
+
+
+[1/27/2023 8:11 AM] .thread
+Charger name: SlimQ 240W Charger
+Charger model number: F240
+Charger charge rate: 
+C1, 20V5A PDO, 96W,
+C2 20V5A PDO, 96W
+Cable tested with https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx, Apple Original PD3.1 USBC cable, DPZZ USB-IF Certified USB4 PD3.1 USBC Cable
+Laptop tested on: Lenovo Legion 7 AMD Gen 7
+Did it charge?:  Yes
+Noted behaviour:  20V PDO voltage low, out of USB Type C specification
+
+{Embed}
+https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx,
+Cables, Adapters, & Docking Stations: USB-C, Thunderbolt 3, Display...
+Cable Matters provides a large selection of innovative cables and accessories, we also educate consumers on the best product offerings. USB C, Thunderbolt 3, DisplayPort, HDMI, DVI, VGA, USB, SATA, SAS, Ethernet, Networking, AV, Power, bulk cables, docking stations, power cords, patch cables, and more.
+
+
+[1/27/2023 8:14 AM] .thread
+Charger name: SlimQ 150W Charger
+Charger model number: F150
+Charger charge rate: 
+C1, 20V5A PDO, 95W,
+C2 20V5A PDO, 97W
+Cable tested with https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx, Apple Original PD3.1 USBC cable, DPZZ USB-IF Certified USB4 PD3.1 USBC Cable
+Laptop tested on: Lenovo Legion 7 AMD Gen 7
+Did it charge?:  Yes
+Noted behaviour:  20V PDO voltage low, out of USB Type C specification
+
+{Embed}
+https://www.cablematters.com/pc-1283-132-40gbps-thunderbolt-4-usb-c-cable-with-100w-charging.aspx,
+Cables, Adapters, & Docking Stations: USB-C, Thunderbolt 3, Display...
+Cable Matters provides a large selection of innovative cables and accessories, we also educate consumers on the best product offerings. USB C, Thunderbolt 3, DisplayPort, HDMI, DVI, VGA, USB, SATA, SAS, Ethernet, Networking, AV, Power, bulk cables, docking stations, power cords, patch cables, and more.
+
+
+[2/17/2023 11:13 PM] not_nhan
+Changed the channel name: The 3rd party PD charger& battery bank guide (NOT a buying list)
+
+
+[6/22/2023 5:58 AM] not_nhan
+Charger name: Baseus 120W Charger
+Charger model number: CCGAN120C 
+Charger charge rate: Negotiated PD 3.0 100W
+Cable tested with: Cablematters 100W 5Gbps C2C 6Ft
+Laptop tested on: Lenovo Legion 5 AMD Gen 6
+Did it charge?:  Yes
+Noted behaviour:  Significant Voltage sag, and significant power cutting in and out during moderate load. Does work and charge fine under less intense load.
+Recommend: No. This model is mostly discontinued, and I personally would not recommend buying them.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1121235350988263525/Baseus_GaN2_Pro_CCGAN_J01_120W_szybka_ladowarka_sieciowa_z_2_gniazdami_USB_C_PPS_PD_3_0_oraz_USB.png?ex=66172ecb&is=6604b9cb&hm=9e5013b7db6a9949a6053622f95281c3a930e26c1f2970fb83a237618ca551c3&
+
+
+[6/22/2023 6:05 AM] not_nhan
+Charger name: Apple 96W USB-C Power Adapter
+Charger model number: MX0J2AM/A
+Charger charge rate: Negotiated PD 3.0 94W
+Cable tested with: Included Apple C2C cable
+Laptop tested on: Lenovo Legion 5 AMD Gen 6
+Did it charge?:  Yes
+Noted behaviour:  Very minor voltage sag, and was able to sustain a Time Spy run on the machine, though noted Turbo boost was off, machine was in quiet mode, and battery is not charging. Switching to balance mode made the charger disconnect under same task. Otherwise charger perform flawlessly during normal use.
+Recommend: Yes. Although not a Gan charger and considerably bulky, the charger perform nearly flawlessly in daily task, and manage to run graphical load, albeit your millage may vary.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1121236925500620800/image.png?ex=66173042&is=6604bb42&hm=bfd23848a78b507f8d733ef63c9eae9f08c628686f2519850f80dbc1c09e713e&
+
+
+[6/22/2023 6:10 AM] not_nhan
+Charger name: Apple 87W USB-C Power Adapter
+Charger model number: MNF82LL/A
+Charger charge rate: Negotiated PD 3.0 94W
+Cable tested with: Included Apple C2C cable
+Laptop tested on: Lenovo Legion 5 AMD Gen 6
+Did it charge?:  Yes
+Noted behaviour:  Very minor voltage sag, though was not able to sustain graphical load during testing, though notably cut out was not constant. Otherwise charger perform flawlessly during normal use.
+Recommend: Yes. The charger has been discontinued, however could be a great option if buy used for light to moderate task.
+
+
+[6/22/2023 6:30 AM] not_nhan
+Battery Bank name: Baseus Elf Power Bank 65W 20000mAh
+Battery Bank model number: PPJL65C
+Battery Bank charge rate: Negotiated PD 3.0 65W
+Cable tested with: Integrated Type C cable, Cablematters 100W 5Gbps C2C 6Ft
+Laptop tested on: Lenovo Legion 5 AMD Gen 6
+Did it charge?:  Yes
+Noted behaviour:  Small voltage sag, otherwise power delivery was stable, during light load. As it is 65W, it cannot handle moderate or high load. Tested to charge full capacity and discharge with ~80% efficiency. Long-term testing will be noted later on in this post, if any problem arise.
+Recommend: Yes. A good battery bank option, albeit limited to 65W.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1121243224279879710/Baseus_Elf_Power_Bank_65W_20000mAh_1_front_side_1200x.png?ex=66173620&is=6604c120&hm=17f22a4bc25576d0c55b6806591fe9bba91dc5988a8d845b2964d1bc68488b4b&
+
+
+[6/22/2023 6:34 AM] not_nhan
+Battery Bank name: Baseus Adaman Power Bank 65W 20000mAh
+Battery Bank model number: PPADM65UL
+Battery Bank charge rate: Negotiated PD 3.0 65W
+Cable tested with: Cablematters 100W 5Gbps C2C 6Ft, Baseus 100W cable
+Laptop tested on: Lenovo Legion 5 AMD Gen 6
+Did it charge?:  Yes
+Noted behaviour:  Small voltage sag, otherwise power delivery was stable, during light load. As it is 65W, it cannot handle moderate or high load. 
+***Battery capacity degraded quicky over use time. Battery gauge exert significant drift and does not indicate true remaining capacity***
+Recommend: No. While power output is ok, battery degradation and incorrect battery gauge make this a no-go.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1121244210218139818/Baseus_Adaman_Power_Bank_65W_20000mAh_Blue_1_front_side_1200x.png?ex=6617370b&is=6604c20b&hm=30f01b2ac90a2e6056a49fae99ed22e519b4d43d3c4bb21c4ab0d0c2ee33e42a&
+
+
+[6/28/2023 3:59 AM] not_nhan
+Charger name: Dell 65 Watt PD Charger
+Charger Model Number: LA65NM190 LPS
+Observed battery charge rate: 45 W on igpu only, 10-15 on hybrid
+Laptop tested on: 2022 Lenovo Legion 5 Gen 7
+Did it charge?: Yes
+Noted behaviour: Reported the charger did not drop out even under dGPU load.
+by @Default Hobo
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1123379598558769253/product_template_image_221020055234_82743.png?ex=661efbc7&is=660c86c7&hm=bc4ee25bb2b1eee101009df76942cb51ef7b4e7296aa355ad02707a63eb16121&
+
+
+[7/23/2023 4:31 AM] not_nhan
+Changed the channel name: The 3rd party Power Delivery (PD) charger& battery bank guide (NOT a buying list)
+
+
+[8/2/2023 9:56 PM] not_nhan
+Charger name: RAEGR RapidLink 1160
+Charger model number: RapidLink 1160 RT-110
+Charger charge rate: 65W
+Cable tested with: included 100W cable, Pixel 7's cable.
+Laptop tested on: Lenovo Legion 5 AMD Gen 6
+Did it charge?:  Yes
+Noted behaviour: Battery charge rate reach 35W. Does not discharge when being in Quiet or Balanced mode when doing light tasks(like browsing) or moderate tasks(having multiple apps open with turbo boost on). 
+Does not charge laptop if multiple device is being charged at the same time.
+Included cable is wonky, not the highest quality.
+Recommend? ~~So far, so good, so yes I would recommend it.~~ Update 13/2/2024: Charger blew up... well no longer recommended.
+by @michaelsoft the modeartor
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1136334101666877440/RAEGR-RapidLink-1160-65W-GaN-Charger.png?ex=6616bd99&is=66044899&hm=bc8dc1eff9acc1f5278cc984a3d8aeea956549f94d7101509f6d09f47a853e76&
+
+
+[8/21/2023 8:10 AM] not_nhan
+Charger name: Ugreen 100W PD GaN Charger
+Charger model number: CD226
+Charger charge rate: 5A 100W Max
+Cable tested with: Verbatim Sync & Charge E Marker Metallic Type-C Cable 100W & 
+Baseus Crystal Shine Series Fast Charging Data Cable USB to Type-C 100W
+Laptop tested on: Lenovo Legion 5 AMD Gen 7
+Did it charge?:  Yes
+Noted behaviour: Battery charge rate around 50~60W. Does not discharge when being in Quiet or Balanced mode when play games (Tried playing dota 2 with it, the wattage steadily increase and it charged slowly)
+Does charge laptop if multiple device is being charged at the same time (around 35W~)
+Both cables are quite good, the Verbatim build quality is much better (more costly)
+
+Recommend? So far, so good, so yes I would recommend it.
+by @Clarence
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1039950460875964477/1143011730549645342/Ugreen-100W-GaN-PD-Fast-Charger-cover3-1024x768.png?ex=661c93a0&is=660a1ea0&hm=f60df2de6ba93fde1541eb3a3fe33eb17043e5047a7e93ae7ed67dad242b6246&
+
+
+[10/22/2023 4:12 AM] not_nhan
+Charger name: Alxum 100W AX-P107A
+Charger model number: P310
+Charger charge rate: Tested at over 70% battery, charged with 30-47 Watts.
+Cable tested with: Ugreen 100W USB-C 2m E-Marker
+Laptop tested on: Lenovo Legion 5 Pro AMD Gen 7
+Did it charge?:  Yes
+Noted behaviour: Disconnects power briefly when plugging in new devices to charger.
+Surface temperature reached a maximum of 58°C at failure load. Dropouts and complete disconnects while running Time Spy Stress Test and Diablo IV. Most likely due to temperature protection. Took several seconds to recover. Also some dropouts after dropping back down to 50-70 Watt, due to bad heat dissipation.
+
+Recommend? Only for casual use, it can not handle more than 75 Watts for continuous use. Playing in Quiet profile ***might*** work, playing in Normal profile will crash the charger. ***Might*** (highly likely) still overheat from extended office use.
+by @Cre8
+
+
+[11/7/2023 3:11 AM] ghostfella
+Changed the channel name: The 3rd party Power Delivery (PD) charger & battery bank guide (NOT a buying list)
+
+
+[12/8/2023 7:49 PM] not_nhan
+Changed the channel name: The 3rd party Power Delivery (PD) charger & battery bank guide (NOT a buying list).
+
+
+[2/5/2024 9:54 PM] not_nhan
+Charger name: Samsung 65W PD Power Adapter Trio with 2x USB-C and 1 USB-A
+Charger model number: EP-T6530
+Charger negotiated power is not tested, but assumed to be 65W as it is working correctly
+Battery charge rate: 40W with iGPU only and nothing else plugged into the charger
+Cable tested with: Ugreen 240W 1.5m USB-C cable
+Laptop tested on: Legion Slim 7i (i9 4070)
+Did it charge: Yes
+Noted behaviour: 
+Charger specs lists 65W only when there is only 1 device charging from the primary USB port.
+When the laptop is already charging, plugging a phone to the second port drops the charge rate to around 20W on the laptop. 
+Phone charges at 10W.
+Laptop does not charge when a phone is already charging. The phone has to be disconnected first and then reconnected after the laptop. 
+
+When the laptop is sleeping, the charging indicator stays on even when a phone is plugged in to the second USB-C port. However, turning the laptop on causes it to stop charging and the charging indicator to flash. The charger specs shows that when 2 devices are plugged to the USB-C ports, the first port will supply 20V 2A (40W) and the second one will supply 9V 2.77A (25W)
+
+Laptop can only access balanced and quiet mode. When using discrete GPU mode through Nvidia control panel and playing Rocket League at high brightness in balanced mode, the charge rate dropped to 2-5W.
+The dGPU mode was tested with only the laptop plugged into the charger 
+
+Recommended? Not really as it does not supply enough power to use multiple ports but it will work in a pinch if only laptop charging is required.
+By @LeyLoch
+
+
+[2/5/2024 9:57 PM] not_nhan
+Charger name: Ugreen Nexode 3-Port OD GaN Fast Charger 140W
+Charger model number: CD289
+Battery charge rate: 60W when laptop is in iGPU mode and it is the only thing plugged in
+Cable tested with: Ugreen 240W 1.5m USB-C cable
+Laptop tested on: Legion Slim 7i (i9 4070)
+Did it charge: Yes
+Noted behaviour: 
+When the laptop & a phone is plugged in, the laptop charges at 40W, while the phone charges at 15W.
+When adding a third device to the USB-A port, the USB-A port does not charge, while both the laptop and phone maintain 40W and 15W respectively.
+The spec sheet shows that when both USB C ports are used, each will be able to supply a max of 65W.
+When charging the laptop and a game controller through the USB-A port, both devices are charging and the laptop charges at 60W.
+
+When in dGPU mode (through Advanced Optimus) and playing rocket league, the laptop charges at around 5W.
+
+Recommended? Yes, it is not too expensive compared to other GaN chargers and comes with a high quality cable
+By @LeyLoch
+
+
+==============================================================
+Exported 28 message(s)
+==============================================================

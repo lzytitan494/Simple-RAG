@@ -1,0 +1,28 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Add 60hz or New Refresh Rates to Legion
+==============================================================
+
+[9/16/2022 4:22 PM] nonkerdoob
+1. Download CRU from this link: https://www.monitortests.com/download/cru/cru-1.5.1.zip
+2. Extract the zip file somewhere.
+3. Open the extracted folder and open CRU.
+4. In Detailed Resolutions there should only be one resolution defined, which is your resolution and its refresh rate.
+5. Click on it, then edit.
+6. Click Copy, then close the dialog.
+7. Click Add..., then click on Paste.
+8. Edit the Refresh Rate to anything you want, but for the purpose of this guide, change it to 60.
+9. Click OK. Make sure the resolution and the refresh rate is as desired.
+10. Close CRU, then open restart64.exe.
+11. Your screen will refresh. If after 10 seconds your screen does not come back (has never happened to me, and other people), press F8 to restore everything back to its defaults.
+12. You're done.
+
+{Embed}
+https://www.monitortests.com/download/cru/cru-1.5.1.zip
+Custom Resolution Utility (CRU)
+Custom Resolution Utility (CRU) is an EDID editor that focuses on custom resolutions. CRU shows you how the monitor defines resolutions and other capabilities and gives you the power to change it. Add
+
+
+==============================================================
+Exported 1 message(s)
+==============================================================

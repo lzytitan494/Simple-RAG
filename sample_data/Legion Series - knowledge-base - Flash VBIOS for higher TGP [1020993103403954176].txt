@@ -1,0 +1,99 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Flash VBIOS for higher TGP
+==============================================================
+
+[9/18/2022 3:12 PM] nonkerdoob
+# VBIOS Flash Guide 
+
+## Preparation: 
+```diff
+-Warning: This is an advanced guide and have potential risks that will damage your laptop and void warranty if done incorrectly. The guide is provided as is, and the user takes full responsibility if something happens to their device.
+
+-If you ever get a Board ID mismatch, abort!```
+- Switch to Hybrid Mode
+- Backup Current VBIOS either with GPU-z or nvflash.
+- Just to be safe: Disconnect any peripherals connected to the dGPU (HDMI, USB-C)
+
+## Backing Up the VBIOS
+- Download GPUZ - <https://www.techpowerup.com/gpuz/>
+- Open it and click on the Export Icon near BIOS version number. (Marked in the Screenshot below)
+
+Alternatively you can use nvflash outlined in Method 2.
+
+## Flashing VBIOS 
+
+### Method 1:  With Lenovo Package
+1. Download Lenovo package from Lenovo Website or the attachment below that is appropriate for your GPU.
+2. Run it.
+3. Reboot and you have higher TGP. Confirm by checking in Nvidia Control Panel > System Information.
+
+If this method fails, try Method 2.
+
+### Method 2: With Nvflash
+1. Download Nvflash from - <https://www.techpowerup.com/download/nvidia-nvflash/>
+2. Extract nvflash into ``C:\nvflash\``
+3. Download VBIOS for your GPU from attachment below
+4. Open CMD as admin, type in ``cd C:\nvflash\``. You can copy the path from address bar in File Explorer
+5. Type ``dir`` to ensure you are in the right directory. You should see your VBIOS.rom and nvflashxx.exe files
+6.  ** Run these commands**
+- To backup - ``nvflash64.exe -b backup.rom``
+-  To flash - ``nvflash64.exe -f -6 <VBIOS file name>.rom``
+- ** When flashing it might give you two warnings. Say yes to both.**
+7. Reboot
+8. Confirm flash with Nvidia Control Panel > System Information
+
+## Restoring Backup VBIOS
+Use Method 2 from flashing VBIOS, change the .rom in step 6 (to flash) to the name of the backup you made.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1020993103403954176/1030587909750923294/unknown.png?ex=6619a2c9&is=66072dc9&hm=a44ec09acb63545e5af61c77e6219d195e4b39fada8a994f4bb9e3c382d83a79&
+
+{Reactions}
+❤️ (6) 👍 
+
+[10/15/2022 8:08 AM] nonkerdoob
+nvflash and vbios directory
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1020993103403954176/1030670926364278784/unknown.png?ex=6619f019&is=66077b19&hm=0a3c639791db6ea70a8a3645ddc64a121c1354ea060d9198b140162a2da26f71&
+
+
+[10/15/2022 8:08 AM] nonkerdoob
+nvflash commands.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1020993103403954176/1030670988049928212/unknown.png?ex=6619f028&is=66077b28&hm=0c45aeea63c8316f5856915c5da8fa384eff63995c7faa8f8d6c191c7107bb9c&
+
+
+[4/22/2023 9:39 PM] nonkerdoob
+## Download Links for VBIOS
+
+For Gen 6 users, you need custom mode to change cTGP and make use of VBIOS. It will have stock behavior in other modes. 
+
+### 3060 140w
+Lenovo Package made for Legion 5i Gen 7. Can be installed in Gen 6.
+Lenovo Link - https://download.lenovo.com/consumer/mobiles/legion5_15iah7h_rtx3060_140w-sign.zip
+Mirror - https://cdn.discordapp.com/attachments/958324999532445716/1030666746224451614/legion5_15iah7h_rtx3060_140w-sign.zip
+
+Lenovo Package made for Legion 5 Gen 7. Can be installed in Gen 6.
+Lenovo Link - https://download.lenovo.com/consumer/mobiles/legion5_15arh7h_rtx3060_140w.zip
+Mirror - https://cdn.discordapp.com/attachments/958324999532445716/1030667013259014204/legion5_15arh7h_rtx3060_140w.zip
+
+ROM File - https://cdn.discordapp.com/attachments/958324999532445716/1021114009967140975/GA106.rom
+
+### 3070 150w
+Lenovo Package made for Legion 5i Pro Gen 7. Can be installed on Gen 6.
+Lenovo Link - https://download.lenovo.com/consumer/mobiles/legion5pro_16iah7h.exe
+Mirror Link - https://cdn.discordapp.com/attachments/958324999532445716/1021110233709432922/legion5pro_16iah7h.exe
+
+ROM FIle - https://cdn.discordapp.com/attachments/958324999532445716/1021111712545513472/249142.rom
+
+### 2060 Legion 5 85w to 115w
+Warning this VBIOS will not work on Y540 and Legion 7i 2020
+ROM File and nvflash - https://cdn.discordapp.com/attachments/768238263525703702/819684558265516072/nvflash-legion5-100w-115w-new.zip
+
+
+==============================================================
+Exported 4 message(s)
+==============================================================

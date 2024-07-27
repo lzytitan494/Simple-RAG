@@ -1,0 +1,80 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / New Laptop Setup / Factory Restore Guide
+==============================================================
+
+[9/16/2022 4:20 PM] nonkerdoob
+**Welcome!**
+
+Hey there legend, it seems you got yourself a new laptop! Make sure to keep your papers/box's intact, do not shred the box the laptop came with incase you need to return it!
+You are now at the point where you have no idea what to do... don't worry we can help.
+
+1. Fully charge & drain your laptop battery on first use. This is just to re-calibrate your battery as it probably has been on the shelf for a month or so.
+2. If you want to avoid the installation of apps like Tiktok and Candy Crush by Microsoft, set your Language to `English (World)` during setup. Change it to English US or your locale **after** set up.
+3. Run Windows Update (Remember that it can take from minutes up to an hour to install everything, from security updates to drivers)
+4. After Windows Update is complete, head over to [GPU Drivers recommendations guide](https://discord.com/channels/761178912230473768/1044177430644019240)
+5. If you have Nvidia, make sure to install just the drivers, as GeForce Experience can cause issue. The subject is talked about in the guide above!
+6. Restart your device after GPU drivers are installed.
+7. Open Windows Store, go to Library and click on search for updates. Let them all install.
+8. If you have Vantage, open it and go to System Updates then disable **Recommended** and **Critical** updates. Read more here: https://discord.com/channels/761178912230473768/761183696421519361/1141265645028261898
+9. If you don't have Vantage or don't want it, head over to [Lenovo Legion Toolkit GitHub](<https://github.com/BartoszCichecki/LenovoLegionToolkit>) and install it. Make sure you install **Lenovo Energy Management** and **Lenovo Vantage Gaming Feature Driver**, both found at [Lenovo PC Support site](https://pcsupport.lenovo.com/us/en/) Drivers & Software > Manual Update section for your laptop model.
+ - To let LLT have control, in LLT > Settings, disable both Vantage and ImController and Hotkeys.
+10. Open up msinfo32 and check if you have Secure Boot enabled. If you don't, do the following:
+ - Shut down the device, power it on and spam F2 to enter BIOS
+ - In Security, set Secure Boot to Enabled and click on Restore Factory Keys
+ - In Exit, Exit saving changes
+11. You can now start do general optimization of Windows:
+ - https://discord.com/channels/761178912230473768/1151165552585347113
+ - https://discord.com/channels/761178912230473768/1083396445983477880
+ - https://discord.com/channels/761178912230473768/1088813221596627045
+11. Time to check your laptop physically and benchmark/stress test it. <https://www.notebookcheck.net/Guide-How-to-check-a-new-laptop-for-issues.232476.0.html>
+
+**And let's not forget the important thing is enjoying your device so make sure to do that!**
+
+Last Updated: 18 Jan 2024
+
+{Reactions}
+athis (155) 👌🏼 (2) 👍 (3) 👀 
+
+[1/19/2024 12:04 AM] nonkerdoob
+Hey there legend, it seems you want to restore your machine to it's former glory? We can help!
+
+Requirements:
+1. You bought a machine with OS preinstalled.
+2. 32GB or larger USB key, USB 2.0 or 3.0 key (Note: all data on the USB key will be deleted).
+3. A computer to download the recovery files and create the USB recovery key.
+4. At least 20GB of free space for downloading recovery files.
+5. Dual drive owners - Disable or Remove secondary drive to prevent chances of it being wiped clean!
+
+Steps:
+1. Go to the Lenovo Recovery Web page at <https://support.lenovo.com/lenovorecovery> and input your serial.
+2. Select the OS Language then Digital download (Recommended) and confirm your acceptance of the terms and conditions by ticking the checkbox.
+3. Sign in to Lenovo using the Lenovo ID and finish the download process.
+4. Run the Lenovo USB Recovery Creator tool and select the Download Recovery files and Create a Recovery USB key option.
+5. Sign in using the Lenovo ID (the same used to do the digital download order).
+6. Select your Digital Download order.
+7. Select the download location and continue to the downloading process. The download location should be on your computer.
+8. After all recovery files have been downloaded, insert the USB (preformat the USB flash drive to NTFS or FAT32, and make sure it is 32GB or above).
+9. Select your USB, click Next and if you click Yes, all data currently on the selected USB key will be deleted as part of the process. The process can take anywhere from 20 to 40 minutes.
+10. When the recovery USB is ready, you can remove the USB from the computer. Click Yes to delete the recovery files or No, Exit to keep them and close the tool.
+11. After creating the Lenovo Recovery USB, the USB can be used to reinstall Windows at any time on the computer model for which it was created.
+12. Insert the USB into the Lenovo computer on which you want to restore the operating system.
+13. Restart the computer, spam F12 until you get the Boot Menu to display. Select your USB and hit Enter. The recovery program starts.
+
+sources:
+ - [Lenovo Digital Download Recovery Service](<https://pcsupport.lenovo.com/us/en/solutions/ht103653>)
+ - [Lenovo Recovery Media](<https://pcsupport.lenovo.com/us/en/lenovorecovery>)
+ - [Using the Windows 10 or Windows 11 Lenovo Factory Recovery USB Key](<https://download.lenovo.com/km/media/attachment/sp40m55672.pdf>)
+
+Last Updated: 19 Jan 2024
+
+{Reactions}
+daveyes (4) 👍 
+
+[1/19/2024 12:05 AM] nonkerdoob
+Changed the channel name: New Laptop Setup / Factory Restore Guide
+
+
+==============================================================
+Exported 3 message(s)
+==============================================================

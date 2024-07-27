@@ -1,0 +1,98 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / SODIMM RAM for laptops - DDR5
+==============================================================
+
+[4/2/2023 8:58 AM] nonkerdoob
+```diff
+-This is a general list. Not all RAM have been tested. Due to DDR5 being new there is not enough data to create a recommended list. 
+-Be aware DDR5 is less forgiving with mixed RAMs
+```
+
+# 4800MHz DDR5
+
+Corsair Vengeance (Works with Slim 7. Can be used in mixed configuration) - <https://www.corsair.com/us/en/Categories/Products/Memory/c/Cor_Products_Memory?q=%3Afeatured%3AmemoryType%3ADDR5&text=&rawFilterQuery=%28memoryFormFactor_en_string%3ASODIMM+OR+memoryFormFactor_en_string%3AUDIMM%29&pageSize=12#rotatingText>
+
+RAMs below can't be mixed or are untested. Should be used as pairs -
+Crucial - <https://www.crucial.com/catalog/memory/ddr5>
+GSkill RipJaws - <https://www.gskill.com/products/1/2/384/Ripjaws-DDR5-SO-DIMM>
+Kingston Fury - <https://www.kingston.com/en/memory/gaming/kingston-fury-impact-ddr5-memory?total+%28kit%29+capacity=16gb&dram+density=16gbit&speed=4800mt%2Fs&total+%28kit%29+capacity=16gb&kit=single+module&dram+density=16gbit>
+Kingston ValueRAM - <https://www.kingston.com/en/memory/client/ddr5-4800mts-non_ecc-unbuffered-sodimm>
+Team Group - <https://www.teamgroupinc.com/en/product/elite-so-dimm-ddr5>
+
+amazon.com
+Corsair Vengance 32GB CL40 - <https://www.amazon.com/dp/B09X5T42XZ>
+Corsair Vengance 64GB CL40 - <https://www.amazon.com/dp/B09X5SNVF9>
+Crucial 32GB CL40 - <https://www.amazon.com/dp/B09S2PNYTY>
+Crucial 64GB CL40 - <https://www.amazon.com/dp/B09S2QLBWC>
+GSkill RipJaws 32GB CL34  - <https://www.amazon.com/dp/B0B1GMD6SB>
+GSkill RipJaws 32GB CL40 - <https://www.amazon.com/dp/B0B1LB2H8Q>
+GSkill RipJaws 64GB CL38 - <https://www.amazon.com/dp/B0B1L2NJY6>
+GSkill RipJaws 64GB CL40 - <https://www.amazon.com/dp/B0B1LFX3VC>
+Kingston Fury 32GB  CL38 - <https://www.amazon.com/dp/B09T8VVTXJ>
+Kingston Fury 64GB CL38 - <https://www.amazon.com/dp/B09T91DK61>
+Kingston ValueRAM 32GB CL40 - <https://www.amazon.com/dp/B09TWHC4LQ>
+Kingston ValueRAM 64GB CL40 - <https://www.amazon.com/dp/B09TWK6L9M>
+Team Group Elite 32GB CL40 - <https://www.amazon.com/dp/B09X1ZHP62>
+Team Group Elite 64GB CL40 - <https://www.amazon.com/dp/B0BGXLV874>
+
+# 5600MHz DDR5
+
+Crucial - https://www.crucial.com/catalog/memory/ddr5
+Kingston Fury - https://www.kingston.com/en/memory/gaming/kingston-fury-impact-ddr5-memory?total+%28kit%29+capacity=16gb&dram+density=16gbit&speed=5600mt%2Fs&total+%28kit%29+capacity=16gb&kit=single+module&dram+density=16gbit
+Team Group - https://www.teamgroupinc.com/en/product/elite-so-dimm-ddr5
+
+amazon.com
+Crucial 32GB CL46 - https://www.amazon.com/dp/B0BLTDRRLF
+Kingston Fury 32GB CL40 - https://www.amazon.com/dp/B0BRTJ4Q94
+Kingston Fury 64GB CL40 - https://www.amazon.com/dp/B0BRTJT5P2
+Teamgroup 16GBx1 CL46 - https://www.amazon.com/dp/B0B4NW29MV
+
+Credits to @GhostFella for the list.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1091927015722074163/1091927015864664156/ktc-hero-memory-impact-ddr5-lg1.jpg?ex=661b4d47&is=6608d847&hm=6d97b3949bc0b1de8d001a0f7b2d8278e92affc50265a3446fe9327bde2d07fa&
+
+{Embed}
+https://www.crucial.com/catalog/memory/ddr5
+Computer Memory | DDR5 DRAM Upgrades
+Crucial DDR5 desktop memory powers a new era of computing innovation. Compatible DDR5 RAM.
+https://images-ext-1.discordapp.net/external/pro12cEJUVI_xqIIR_jz6GboTCYGcMD_eVHhYH0FeFk/https/content.crucial.com/content/dam/crucial/web-ui/social/facebook-like-crucial.jpg
+
+{Embed}
+https://www.kingston.com/en/memory/gaming/kingston-fury-impact-ddr5-memory?total+%28kit%29+capacity=16gb&dram+density=16gbit&speed=5600mt%2Fs&total+%28kit%29+capacity=16gb&kit=single+module&dram+density=16gbit
+Kingston FURY Impact DDR5 SODIMM Memory – 8GB-64GB/6400MT/s - Kings...
+Plug N Play kit capacities up to 64GB, Kingston FURY Impact DDR5 Plug N Play modules overclock to the highest frequency published, up to 5600MT/s, without adjusting BIOS settings. Modules featuring XMP 3.0 profiles can overclock to the highest frequency published, up to 6400MT/s, by selecting the profile in BIOS settings.
+
+{Embed}
+https://www.teamgroupinc.com/en/product/elite-so-dimm-ddr5
+ELITE SO-DIMM DDR5 LAPTOP MEMORY
+Ultra-high frequency, energy-efficient, and reliable memory module for the next generation of laptops
+https://images-ext-1.discordapp.net/external/0fmw2xXxEja53n0SXA7TsCF4Z9Bb_yjGN2E7OpqnpA4/https/www.teamgroupinc.com/en/upload/product_note_pic/fdf3c67ac09eab1b1373a3c0954a6920.jpg
+
+{Embed}
+https://www.amazon.com/dp/B0BLTDRRLF
+Crucial RAM 32GB Kit (2x16GB) DDR5 5600MHz (or 5200MHz or 4800MHz) ...
+CT2K16G56C46S5 is the Crucial 32GB kit consisting of (2) 16GB laptop modules that operate at the speed of 5600MT/s and has a CAS latency of 46. It is a SODIMM and conforms to the industry standard DDR5 SODIMM layout of 262 pins. It is compatible with systems that can take DDR5-5600 SODIMM memory.
+https://images-ext-1.discordapp.net/external/Rj2pWH369atUMJLnrTZUZcfbC-20k0xcc1w3Mvx4vRo/https/m.media-amazon.com/images/I/41Vpc7y6FGL._SR600%252c315_PIWhiteStrip%252cBottomLeft%252c0%252c35_PIStarRatingFOURANDHALF%252cBottomLeft%252c360%252c-6_SR600%252c315_ZA164%252c445%252c290%252c400%252c400%252cAmazonEmberBold%252c12%252c4%252c0%252c0%252c5_SCLZZZZZZZ_FMpng_BG255%252c255%252c255.jpg
+
+{Embed}
+https://www.amazon.com/dp/B0BRTJ4Q94
+Kingston Technology Fury Impact 32GB (2x16GB) 5600MT/s DDR5 CL40 La...
+Your notebook or small form factor machine can now experience the latest, cutting-edge memory technology with Kingston FURY™ Impact DDR5. Intel® XMP 3.0 Certified SODIMM kit capacities up to 64GB, Kingston FURY Impact DDR5 packs all the enhanced features of DDR5 into a slim, compact form factor. ...
+https://images-ext-1.discordapp.net/external/EMqRQJ-zK6OIB5SklhQIbtpDTtXF3wAYbrd9ibovznk/https/m.media-amazon.com/images/I/31S%252BK6cq%252BKL._SR600%252c315_PIWhiteStrip%252cBottomLeft%252c0%252c35_PIStarRatingFOURANDHALF%252cBottomLeft%252c360%252c-6_SR600%252c315_ZA411%252c445%252c290%252c400%252c400%252cAmazonEmberBold%252c12%252c4%252c0%252c0%252c5_SCLZZZZZZZ_FMpng_BG255%252c255%252c255.jpg
+
+{Reactions}
+💻 (2) 
+
+[6/1/2023 1:15 PM] ghostfella
+Changed the channel name: Best SODIMM RAM for laptops - DDR5
+
+
+[6/1/2023 1:15 PM] ghostfella
+Changed the channel name: SODIMM RAM for laptops - DDR5
+
+
+==============================================================
+Exported 3 message(s)
+==============================================================

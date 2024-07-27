@@ -1,0 +1,43 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Disable connectivity in Modern Standby
+==============================================================
+
+[10/13/2022 1:26 AM] mind12
+**Check if your device supports modern standby**
+*(Most of the G7 (2022) Legion devices do)*
+Run the command in an admin cmd: `powercfg -a`
+`If "Standby (S0 Low Power Idle) Network Connected" is available then your device supports it!` 
+
+```fix
+To avoid battery drain and possible overheating issues during modern standby (network connected) disable connectivity using the following steps below. You can't disable modern standby completely.
+```
+
+**Disable Network Connectivity while in Modern Standby in Local Group Policy Editor**
+*The Local Group Policy Editor is only available in the Windows 10 Pro, Enterprise, and Education editions.*
+```
+Computer Configuration > Administrative Templates > System > Power Management > Sleep Settings
+Allow network connectivity during connected-standby (plugged in) - Disabled
+Allow network connectivity during connected-standby (on battery) - Disabled
+```
+
+**Disable Network Connectivity while in Modern Standby using a REG file for Group Policy**
+*To Disable Network Connectivity while in Modern Standby when Plugged In (AC)*
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\f15576e8-98b7-4186-b944-eafa664402d9
+ACSettingIndex DWORD 0
+```
+*To Disable Network Connectivity while in Modern Standby On Battery*
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\f15576e8-98b7-4186-b944-eafa664402d9
+DCSettingIndex DWORD 0
+```
+
+
+[10/13/2022 1:27 AM] mind12
+Changed the channel name: Disable connectivity in Modern Standby
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

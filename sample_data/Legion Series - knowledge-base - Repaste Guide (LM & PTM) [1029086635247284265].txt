@@ -1,0 +1,103 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Repaste Guide (LM & PTM)
+==============================================================
+
+[10/10/2022 11:12 PM] nonkerdoob
+**STOCK THERMAL INTERFACE APPLICATION __(For devices without STOCK LM)__**
+PTM 7950 is the closest TIM you can get that has similar properties to what Lenovo uses out of the box. (PTM 7958). Stock TIM has shown very stable performance on Legions and there are no reasons to change it. However, if you had your laptop serviced (Stock TIM only comes with a heatsink replacement) or notice your thermal performance degrading, this guide details on how to get one on your own and apply it.
+
+Where to buy: <https://www.ebuy7.com/item/674487269645>
+Recommend buying 40x40 at minimum. A safe amount would be 40x80. Don't get excess, if you do, store in a cool and dry place. This is phase change material and their properties will change when exposed to heat.
+
+How to apply:
+
+- Cut the pad size a **little bit bigger** than the die size of CPU and GPU
+- Apply _like a screen protector_  after removing the plastic protector (has protective plastic in both sides) **on the die itself. **(If you haven't seen screen protector applications, look it up)
+- Remove top plastic protector that will contact with heatsink
+- Ensure there are no bubbles in your application
+- Screw heat-sink back in (**make sure to do only ONE TURN per screw in the order dictated until all is tightened**) 
+
+```diff
+-This is not a replacement for VRM and VRAM thermal pads. PTM is a phase change material that will become a paste when exposed to higher temperatures.
+```
+
+Should look like this after application (before applying heatsink) [GE76 as example]
+https://i.postimg.cc/gjS7yTZ2/20220125-145533.jpg
+
+Credits to @Beya [L7i Pro | 13900HX | 4090] for the application guide.
+
+Alternative Links - 
+amazon: <https://www.amazon.com/s?k=ptm+7950>
+aliexpress: <https://www.aliexpress.us/w/wholesale-ptm-7950.html?spm=a2g0o.home.search.0>
+ebuy7: <https://www.ebuy7.com/index.php?route=product/search&search=PTM%207950>
+ebay: <https://www.ebay.com/sch/i.html?_nkw=ptm+7950>
+lazada: <https://www.lazada.com.my/tag/ptm-7950/>
+lttstore: <https://www.lttstore.com/products/ptm7950-phase-change-thermal-pad>
+moddiy: <https://www.moddiy.com/products/PTM7950-SP-Super-Highly-Thermally-Conductive-PCM-Pad.html>
+
+Full Guide - TBD
+
+{Embed}
+https://i.postimg.cc/gjS7yTZ2/20220125-145533.jpg
+https://images-ext-1.discordapp.net/external/E9LWxGYEo189-tqz86t4wfoFCRO8bAIe3dnDIjqixxI/https/i.postimg.cc/gjS7yTZ2/20220125-145533.jpg
+
+{Reactions}
+❤️‍🔥 (2) destare (2) 
+
+[12/4/2023 10:35 AM] nonkerdoob
+Changed the channel name: Repaste Guide (LM & PTM)
+
+
+[12/4/2023 12:52 PM] ghostfella
+## How to repaste your machine (if it comes with Liquid Metal)
+
+This is a guide for machines with liquid metal applied and since there is a discrepancy in LM application by the manufacture you may want to repaste your machine.
+
+**Tools you need:**
+- Thermal Grizzly Conductonaut (Extreme) / TG-C/E, 1 gram is enough for the CPU
+- PTM 7950 for the GPU
+- Thermal pads for the VRAMs, height 1.5mm - [pads measurements](https://discord.com/channels/761178912230473768/1075519891429412865/1124663759936426055)
+- iFixit tools or something similar
+- Gloves (optional, if you care about perfection and you don't want to make your laptop interior oily and sweaty)
+- Compressed air
+- Cotton pads, Q-tips to clean the old paste
+- 99% Isopropyl alcohol
+ 
+**FIRST** 
+You have to watch some videos on "How to apply liquid metal" to get an idea how to apply it 
+Watch Braxtons video ["How to open the laptop"](https://discord.com/channels/761178912230473768/1075519891429412865/1112724580629479505) and check his [mounting numbers guide](https://discord.com/channels/761178912230473768/1075519891429412865/1077697195089854494) as well and make sure to remember the numbers as you will need them.
+Be careful while opening because it's a bit tricky.
+
+**SECOND**
+When you open the machine and before you touch anything, unplug the battery, wiggle it back and fourth.
+Additionally, you can open the lid and press the power button to make sure there is no electricity.
+Take a picture for later if you forgot where the screws are because the top left and right is the silver screws.
+Now first take the NVMe covers off and make sure to put them on their back to prevent dust going on the thermal pads on NVMe covers. (I'm assuming you're wearing gloves to prevent your oils and dirt to get the laptop)
+
+**Be patient, take your time, do it when you have a lot of time and no one around to distract you**
+Unplug the fans connectors, no need to use any tools just wiggle and pull it and be careful but don't worry the connector are strong enough, just may need a bit of force.
+Now you have 7 screws on your vapor chamber, you may want to unscrew them for two rotations each and repeat. Don't unscrew one by one all the way to prevent any chance of your vapor chamber getting bent.
+Now clean the CPU and GPU die, be very careful to not drop the LM on your motherboard as it may get damaged.
+You should clean the fans, it is not necessary to be perfect, just make sure your vapor chamber exhausts are clean. Make sure you gently put your finger on the fans while cleaning it, to make sure it will not be damaged.
+After you cleaned it all, start taking off the thermal pads either from the motherboard or the vapor chamber depending where they are stuck.
+
+1. Apply the new thermal pads on your VRAMs. You may want to cut them for each VRAM pad.
+2. Cut the PTM for the GPU die and apply it on the die, it doesn't need to be perfect it will get a lot better with heat cycles during usage.
+3. Do one drop of LM on the CPU die and the heatsink part for the CPU and spread it as Braxton did. You may want to see some picture of his liquid metal application, **don't put too much as you will spread it**
+4. Put the heatsink back on and follow the order Braxton did - first make two circles for each screw to make sure they're all in place and then start with making one circle for each screw - repeat with one circle of your hand idk how to explain it hope you get the idea and keep the order until they stop
+5. Put everything back.
+6. Open HWINFO and Cinebench R23, put laptop in Performance mode.
+
+You should see at least 7 to 8 degrees drop on each core. If you see that or a larger drop, you did a perfect job!
+Also, if it's not throttling on a 10 min Cinebench test, you're good - assuming the laptop is lifted and not flat on the desk while doing the test.
+
+Hope this help anyone wants to repaste his machine!
+credits: @Braxton, @Harry Ball
+
+{Reactions}
+❤️ (2) 
+
+==============================================================
+Exported 3 message(s)
+==============================================================

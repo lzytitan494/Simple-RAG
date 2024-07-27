@@ -1,0 +1,83 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / How to clean install your video drivers? DDU, Nvidia Cleanup Tool, AMD Cleanup Utility
+==============================================================
+
+[9/17/2022 2:23 AM] ghostfella
+**HEADS UP!** The official clean up utilities from AMD or Nvidia will save you from a headache.
+
+- AMD Cleanup Utility - <https://www.amd.com/en/support/kb/faq/gpu-601>
+- Nvidia Cleanup Tool - <https://developer.nvidia.com/cleanup-tool> 
+
+**Make sure you are in HYBRID MODE** (to avoid any issues that might or might not appear)
+
+1. Download **portable, self-extracting** DDU (Display Driver Uninstaller) from: <https://www.wagnardsoft.com/>
+2. Download latest AMD, Intel or Nvidia driver of your choice (you can download an older version as well **if you know** it performs better than newer ones since that's the case nowadays)
+ - AMD drivers download: <https://www.amd.com/en/support>
+ - Intel drivers download: <https://www.intel.com/content/www/us/en/search.html#sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Graphics]>
+ - Nvidia drivers download: <https://www.nvidia.com/Download/Find.aspx?lang=en-us>
+ - **You can also download Lenovo OEM drivers as sometimes they work better than AMD/Intel/Nvidia**: <https://pcsupport.lenovo.com/us/en>
+
+3. Extract DDU on your desktop.
+4. **Make sure you know the location of DDU and drivers you downloaded!** Place the driver(s) either in same folder with DDU or together on your desktop.
+5. **Unplug or disable your internet connection, both Wi-Fi and Ethernet!** This is to prevent Windows Updates from ruining your clean install.
+6. Open DDU, in the options window check the second to last option, **Enable Safe Mode dialog**. Close the options window then close DDU.
+7. Open DDU again, from **Launch option** select **Safe Mode** and click on bottom left button **Reboot to Safe Mode**.
+8. In Safe mode, on the right side of DDU, on **---Select device type---** select **GPU** and for **---Select device---** below it choose whichever one you are trying to uninstall (AMD, Intel or Nvidia).
+9. On the left side choose **Clean and restart**.
+10. After the restart, install AMD, Intel or Nvidia driver of your choice.
+11. **Reboot and enable your Internet connection**.
+
+**If you were using it, do not forget to turn your Hybrid Mode OFF / use dGPU only mode *after* you are done with everything!**
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1020437208806727732/1020437209431670925/DDU.jpg?ex=66199f35&is=66072a35&hm=8e4993a4693a11f233c18491b91b6abad8b601bb40e64bad67bacbdcfa9a842b&
+
+{Reactions}
+🙏 (7) nvidia (2) amd intel 
+
+[10/1/2022 10:33 PM] ghostfella
+Changed the channel name: How to clean install your video drivers? DDU, Nvidia Cleanup Tool, AMD Clean Install
+
+
+[10/1/2022 10:37 PM] ghostfella
+Changed the channel name: How to clean install your video drivers? DDU, Nvidia Cleanup Tool, AMD Cleanup Utility
+
+
+[11/20/2022 4:51 PM] ru1n.
+Nvidia Cleanup tool - How to use:
+
+- Download Nvidia Cleanup tool from:
+https://developer.nvidia.com/cleanup-tool
+- Download the Nvidia driver that you plan to install from:
+https://www.nvidia.com/Download/Find.aspx?lang=en-us
+- Turn ON hybrid mode (as extra safety measure) 
+- Turn your internet off (since you are doing an uninstall and you need to prevent windows from automatically installing 512.36 (the driver provided by Lenovo by default) when it will see you without any driver)
+- Run the cleanup tool and uninstall the current driver
+- After the restart that you'll be prompted, install the downloaded driver with custom (advanced)(while still while being internet off) 
+- After the install is done, do a restart (can set hybrid mode off and it will automatically ask for a restart) to make sure everything is working properly and turn your internet back on.
+
+
+**BOTH DDU and Nvidia Cleanup Tool will lead you to the same result in the end. DDU is the complex way (in which you can also remove extra things through its settings or add) and Nvidia Cleanup tool is the simple way of uninstalling, without too much hassle.**
+
+*GeForce Experience is not recommended as it might have various interactions either with Windows or the driver itself and can do more bad than it would do good. The game optimization option that it provides can be done by the user himself/herself. An app alone won't increase your FPS just by having it.  It's a piece of bloatware that is just wasting your space on the disk. However, if you do plan to install it for Shadowplay, make sure to turn its updates off within the app and any experimental features.*
+
+{Embed}
+https://www.nvidia.com/Download/Find.aspx?lang=en-us
+Advanced Driver Search official NVIDIA drivers
+Advanced Driver Search official NVIDIA drivers
+https://images-ext-1.discordapp.net/external/iy_1cyOY-OS0pIO9ik94i0Xk38JPtelmuauIaXa_7JE/https/www.nvidia.com/content/dam/en-zz/Solutions/geforce/drivers/cut-graphics/nvidia-geforce-drivers-meta-image-1200x627.jpg
+
+{Reactions}
+👍 
+
+[5/6/2023 2:39 AM] ru1n.
+**Here's how you can backup Nvidia control panel settings**:
+
+You can keep 3D settings between driver updates. They are stored in two .bin files in C:/ProgramData/NVIDIA Corporation/Drs (usually ProgramData is hidden, check this out in case you don't know how to reveal hidden files: https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5).
+ Backup nvdrsdb0.bin (Global settings) and nvdrsdb1.bin (Program specific settings). Then restore them to their original folder after clean driver install.
+
+
+==============================================================
+Exported 5 message(s)
+==============================================================

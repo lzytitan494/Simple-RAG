@@ -1,0 +1,54 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / How to make a Debloated ISO
+==============================================================
+
+[2/4/2023 6:32 PM] fallibleelf2988
+**What is a debloated ISO?** 
+It's a customized Windows version which you can make yourself by removing unnecessary bloat and making Windows faster. You can also customize the installation of the ISO and add programs that will be installed after installation.
+
+Steps:
+1. Download MSMG Toolkit - https://msmgtoolkit.in/downloads.html
+2. Get original Windows ISO image from Microsoft website. Get Disk Image file. - https://www.microsoft.com/software-download/windows11
+3. Put downloaded ISO into folder called "ISO"
+4. Open the "Start" file as admin. Accept the pop up
+5. Go to "Source" tab, press 3 to Select source from DVD folder and enter the exact name of the ISO. Accept the pop up.
+6. Go to "Source" tab, press 1 and follow the instructions.
+7. Now it's removal time. Go back to Main Menu, press 3 - You are now in Remove tab. Remove any features that you don't want and then press options number 2 to remove those features. It may take a while.
+8. After removal, press 5 - Apply - then press 2 - Apply & Save Changes to Source Images.
+9. After it's completed, press 6 for the Target tab, select Make a DVD ISO image. After it's done, press X and program will quit.
+10. That's it! You are now done making your own custom ISO. Make sure to test it out by using a VM and booting into said ISO.
+
+You can now proceed to make your own bootable stick by using Rufus or you can mount the ISO for installation.
+Video guide for making the ISO via MSMG toolkit - https://www.youtube.com/watch?v=Fa9BfLNvMDo
+What I did in my MSMG toolkit modification(pls do not copy cuz everyone has different things to remove/keep/add, just posting here incase anyone is curious on what I removed) https://docs.google.com/document/d/1AUPP0x0TVOgF1l_S6B9F1nxj-Vc6vmP4nO1PrYffkA0/edit?usp=sharing
+
+{Embed}
+https://msmgtoolkit.in/downloads.html
+Downloads
+MSMG Toolkit - Downloads
+
+{Embed}
+Portal Seven
+https://www.youtube.com/watch?v=Fa9BfLNvMDo
+MSMG Toolkit  - Make custom Windows 11 ISO to make your PC faster
+MSMG Toolkit  - Make custom Windows 11 ISO to make your PC faster
+
+In this video I will show you how to Make A Custom Windows ISO by Using MSMG Toolkit. By MSMG Toolkit you can remove unwanted Apps and features from Windows ISO, which makes it light and faster
+
+#MSMGToolkit
+#windows11iso
+https://images-ext-1.discordapp.net/external/g2iP-QN-R_S4faZCxMYSFOdIyGJEpjmiAWjmgxDv7Z0/https/i.ytimg.com/vi/Fa9BfLNvMDo/maxresdefault.jpg
+
+{Embed}
+https://docs.google.com/document/d/1AUPP0x0TVOgF1l_S6B9F1nxj-Vc6vmP4nO1PrYffkA0/edit?usp=sharing
+MSMG toolkit what I removed
+What I removed using MSMG toolkit-Internet Tab-Edge WebView(may break apps, but hasn’t happened yet for me)Internet ExplorerMultimedia Tab-Game ExplorerScreensaversSound themesSpeech RecognitionWindows Media PlayerWindows Photo ViewerWindows System Assessment ToolNetwork Tab-Walle...
+https://images-ext-1.discordapp.net/external/cwdIQEpl5FJY1xGBzyVGMZ9Fz4P90Freb_OTFb8bGOM/https/lh5.googleusercontent.com/LTy0Dko2CNxqGN9cOOaECKcXsvbhSfeMvoD_KXCF7gOASHRn5gBJ9s8dNTMD-mlLDsCp_Tsr36J7Uw%3Dw1200-h630-p
+
+{Reactions}
+upvote (8) 🔥 (5) WindowsRecycleBin 🤔 chad 👎 
+
+==============================================================
+Exported 1 message(s)
+==============================================================

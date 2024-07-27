@@ -1,0 +1,53 @@
+==============================================================
+Guild: LaptopWiki™
+Channel: --> Start Here / 🦮-guides / Thermal paste
+==============================================================
+
+[1/17/2023 9:00 PM] m164
+A list of useful links for those looking for a thermal paste
+
+PTM 7950 for South East Asian people through Lazada Global (voucher and free shipping makes this option more affordable to SEA peeps)
+> ```https://www.lazada.com.my/products/honeywell-7950-phase-change-thermal-conductive-sheet-laptop-phase-change-silicone-grease-cpu-thermal-conductive-paste-pad-patch-material-i2810954266-s13469325114.html ```
+> (Malaysia)
+
+> ```https://www.lazada.com.ph/products/honeywell-7950-phase-change-thermal-conductive-sheet-laptop-phase-change-silicone-grease-cpu-thermal-conductive-paste-pad-patch-material-i2752045389-s13214494260.html? ```
+> (Philippines)
+
+> ```https://www.lazada.vn/products/tam-dan-nhiet-chuyen-pha-honeywell-ptm7950-thermal-pad-dan-nhiet-cpu-gpu-laptop-i1936969612-s9071398594.html? ```
+> (Vietnam)
+
+(Indonesia, Thailand, Laos and Cambodia not available yet, manually search it or refer to ebuy7 if unavailable)
+
+(credits for the list go to Kuri)
+
+
+[1/17/2023 9:01 PM] m164
+> Legion 2021 factory thermal compound: 
+> ```Honeywell 7950 
+> Recommended to buy the sheet version because it's a phase change material, no need to air dry on a specific temperature
+> 
+> Cost: 16.3$ (size 40x80mm) + 4.59$ shipping to Hungary (Pay later shipping -> Cosmetic & Liquid & Powder)
+> Shipped in 14 days.
+> Application: cut to die size, 40x80mm is plenty even 40x40 is enough
+> CPU die size:
+> 13x14mm 5800H
+> 20x10mm 11800H
+> GPU die size:
+> 20x20mm 3070
+> 20x15mm 3060``` 
+
+(credits for the list go to mind12)
+
+
+[1/17/2023 9:22 PM] m164
+> ```Thickness of thermal pads on the heat sink:```
+> https://discord.com/channels/819491422327406592/819526117140463616/879583938492899409
+
+> ```Legion 2021 factory thermal compound: 
+> Honeywell 7950 
+> Recommended to buy the sheet version because it's a phase change material, no need to air dry on a specific temperature.```
+
+
+==============================================================
+Exported 3 message(s)
+==============================================================

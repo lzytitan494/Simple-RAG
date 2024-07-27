@@ -1,0 +1,152 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / GPU Drivers - Choosing the most stable and best performing
+==============================================================
+
+[11/21/2022 2:38 PM] ru1n.
+**Most stable** GPU drivers as of current date (April 2024):
+
+*Nvidia*:
+- Drivers: **527.56/528.49/531.41/531.61/531.68/537.34/546.33/551.52/551.61**
+
+*AMD* CPU (integrated GPU):
+- Drivers: **OEM(Lenovo) driver from manufacturer website.**
+
+*Intel* CPU (integrated GPU):
+- Drivers: **OEM (Lenovo) driver from manufacturer website.**
+
+**Download links**: 
+
+Lenovo: https://pcsupport.lenovo.com/us/en
+Nvidia: https://www.nvidia.com/Download/Find.aspx?lang=en-us
+AMD: 
+https://www.amd.com/en/support (Processors with graphics - > AMD Ryzen Processors - > select the one you have)
+Intel: 
+https://www.intel.com/content/www/us/en/download-center/home.html
+
+
+The following drivers have been used/tested by the community and offer the most stable experience and best performance as of current time. They should not conflict or cause any issues such as BSODs, black screen when closing the lid or any other issues. 
+However, please keep in mind that there are always multiple variables and experience **might** vary from person to person or from game to game. On an overall, the above drivers perform the best for the big majority. If one/few people ever encounter an issue with a certain named driver, please consider downgrading or upgrading to another of the mentioned ones.
+
+**For people that are getting dim screen (broken brightness, such as 80% brightness feeling like a 20% after installing a driver), please follow this guide:** https://discord.com/channels/761178912230473768/1035453517097336863
+
+
+
+**UNINSTALLING A DRIVER**:
+
+Use DDU or https://developer.nvidia.com/cleanup-tool to uninstall your current driver, if you plan to. (Nvidia cleanup tool is the easiest way, as DDU is more complex.)
+
+-> how to DDU/NvidiaCleanupTool for uninstalling: https://discord.com/channels/761178912230473768/1020437208806727732
+
+
+```- DDU the driver (if you got any type of problems with it ONLY) if not, select "custom options" when installing the driver and check the box where it says "Clean Install"```
+
+{Reactions}
+❤️ (67) 👍 👀 
+
+[11/21/2022 2:49 PM] ru1n.
+**Important NOTES:**
+
+
+- If you notice any sort of crash/bluescreen stating "nvlddmkm" or nvlddmkm.sys", please consider swapping to another of the stable driver. This is an acknowledged issue by NVIDIA and it's been happening in every driver. It just varies from machine to machine, on some the crash happens on driver "X", to some on driver "Y". The only way right now to get rid of it is swapping the driver until you find a stable one that won't crash your system. Please keep in mind that every machine is different and will react differently to driver(s) or the conflicts between them and your system.
+In case you had a crash and you weren't fast enough to notice it, do the following:
+Go to search bar and type **event viewer** - > on the left menu click on "Windows Logs - > System" - > on the right panel then click on "Filter Current Log", check the boxes where it says "Critical" and "Error" then hit ok and see which errors show up, from there on you will be able to track which kind of errors happened on your system.
+
+
+- Note that every driver past 511.79 broke G-Sync for most GEN 6 Legion users. Having G-Sync on causes microstuttering, overshoot or flickering. If you notice any of these, try to turn G-Sync off and see if it's the cause of your issue. It was forwarded to Nvidia and to Reddit already. A fix is yet to be announced/published.
+
+{Reactions}
+👍 (4) 
+
+[11/21/2022 2:50 PM] ru1n.
+If you still want to use G-Sync, despite the mentioned issues, read/follow the post from here: https://discord.com/channels/761178912230473768/1068179430226272348
+
+
+[11/28/2022 5:52 AM] ghostfella
+**DRIVER LINKS**
+
+**Please make sure to use one of the newer drivers!**
+
+**NVIDIA**
+511.23 - https://www.nvidia.com/download/driverResults.aspx/185109/en-us/
+511.65 - https://www.nvidia.com/download/driverResults.aspx/186769/
+511.79 - https://www.nvidia.com/download/driverResults.aspx/187099/en-us/
+522.25 - https://www.nvidia.com/download/driverResults.aspx/193714/en-us/
+526.86 - https://www.nvidia.com/Download/driverResults.aspx/194176/en-us/NVIDIA/
+527.37 - https://www.nvidia.com/download/driverResults.aspx/197301/en-us/
+527.56 - https://www.nvidia.com/download/driverResults.aspx/197461/en-us/
+528.49 - https://www.nvidia.com/download/driverResults.aspx/199655/
+531.41 - https://www.nvidia.com/download/driverResults.aspx/200383/en-us/
+531.61 - https://www.nvidia.com/download/driverResults.aspx/204246/en-us/
+531.68 - https://www.nvidia.com/download/driverResults.aspx/204475/
+537.34 - https://www.nvidia.com/download/driverResults.aspx/211638/en-us/
+537.58 - https://www.nvidia.com/download/driverResults.aspx/212702/en-us/
+546.33 - https://www.nvidia.com/download/driverResults.aspx/216929/
+551.23 - https://www.nvidia.com/download/driverResults.aspx/218114/en-us/
+551.52 - https://www.nvidia.com/Download/driverResults.aspx/218741/en-us/
+551.61 - https://www.nvidia.com/download/driverResults.aspx/221746/en-us/
+
+{Reactions}
+❤️ (67) 🇦 (4) 
+
+[1/8/2024 3:38 AM] ru1n.
+**Additional info - Consider using "Custom Install(Advanced)" when installing the Nvidia GPU driver**: 
+```GeForce Experience is not recommended as it might have various interactions either with Windows or the driver itself and can do more bad than it would do good. The game optimization option that it provides can be done by the user himself/herself. An app alone won't increase your FPS just by having it.  It's a piece of bloatware that is just wasting your space on the disk & your RAM. However, if you do plan to install it for Shadowplay, make sure to turn its updates off within the app and any experimental features. Even still, OBS can replace Shadowplay which in the end again, leads to GFE not being useful.
+
+It's better to tweak the game settings on your own (or watch informative youtube channels such as HardwareUnboxed, DigitalFoundry, BenchmarKing or websites such as Game-Debate/Resetera) and doing things this way, not only that you can squeeze more FPS out of your game but you can also guarantee better visuals at the same tradeoff.
+GeforceExperience is following a template of settings that is detected on your hardware level/based on which hardware you have. It will never offer you both good visuals & the best FPS possible at the same time. It will just lower multiple settings all together, being them good or not.```
+
+{Reactions}
+👍 (7) athis (3) 
+
+[3/3/2024 1:38 AM] ru1n.
+**iGPU drivers info**:
+It is recommended to use the drivers from the laptop's manufacturer website (in this case Lenovo) instead of the ones from their official website to avoid any sort of issues since latest drivers can sometimes cause conflicts with either your display or your dGPU.
+You can download them from:
+https://pcsupport.lenovo.com/us/en by entering your laptop serial number to detect your model.
+
+
+[3/20/2024 10:35 PM] ru1n.
+**Nvidia drivers info**:
+For the time being it is advisable to **not** use the Nvidia App as it can affect the FPS in your games (by a small amount), on top of that the app is still not perfect and it got its own flaws. You can always choose to uninstall it normally without harming your current driver installation!
+
+Here's a series of pics on how a driver install should be properly made (please do not follow the checkboxes in the picture exactly as I have them as these are my own way of installing a driver - I will mention below why)
+
+
+[3/20/2024 10:35 PM] ru1n.
+https://i.imgur.com/3KUdUFv.png
+
+{Embed}
+https://imgur.com/3KUdUFv
+https://images-ext-1.discordapp.net/external/3pfcP_NALWMFKeK6-dOa3pqEBmb_gd7gDuvTH1YACj8/https/i.imgur.com/3KUdUFv.png
+
+
+[3/20/2024 10:35 PM] ru1n.
+https://i.imgur.com/jeOHSJ8.png
+
+{Embed}
+https://imgur.com/jeOHSJ8
+https://images-ext-1.discordapp.net/external/w7LuP0gM2QV8ob-6h4i7QFFU19ce-yh8Q_hAf2C93as/https/i.imgur.com/jeOHSJ8.png
+
+
+[3/20/2024 10:46 PM] ru1n.
+https://i.imgur.com/XdOMItq.png
+
+{Embed}
+https://imgur.com/XdOMItq
+https://images-ext-1.discordapp.net/external/ASAb4sAqlCGbh0vM9qFYp6y4-5cz35s99c09QV4yQGA/https/i.imgur.com/XdOMItq.png
+
+
+[3/20/2024 10:46 PM] ru1n.
+- **RECOMMENDED** -**HD Audio Driver** is *RECOMMENDED* to be installed **IF** you are using any external source through either your HDMI cable that need your graphics card to function.
+
+PS: HD Audio Driver been the culprit for causing certain Bluescreen errors in the past alongside crackling audio; This doesn't mean to avoid installing it now, it's just a small note to keep track of, in case you notice anything of sorts after having it installed.
+
+- OPTIONAL - **PhysX System Software** was initially used by older games that were needing it for certain effects such as particles and different mechanics. Newer games nowadays are not using it anymore so if you do plan to play older games (such as Batman: Arkham Knight or older, you will need it)
+
+{Reactions}
+athis (3) 
+
+==============================================================
+Exported 11 message(s)
+==============================================================

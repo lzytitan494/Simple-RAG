@@ -1,0 +1,42 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / BIOS Flashback - How to downgrade or revert BIOS?
+==============================================================
+
+[9/24/2022 6:50 PM] ghostfella
+## How to use BIOS Flashback / downgrade BIOS:
+1. Navigate to **C:-> Windows -> Firmware** - if there's a .bin file of the old BIOS, delete it, if there is no .bin file then move on to next step.
+2. Turn on **BIOS Flash back** in BIOS
+3. Uninstall **System firmware** under Firmware tab in Device Manager and make sure to mark "Attempt to remove driver for this device."
+4. Run the desired BIOS file exe, let it finish.
+5. If the notification "Device need to be restart to set up system firmware" appears ---> Redo step 3. again
+## How to get Old BIOS versions:
+**1. Chinese Lenovo Support website** - https://newsupport.lenovo.com.cn/
+1. Find you laptops Chinese variant by opening your **BIOS Readme txt file** (eg. Legion S7 16IAH7/**Lenovo Legion Y9000X IAH7** <-- this one is CN model)
+2. Input the model in the input field and select correct model
+3. When on the model page, click on **驱动下载** / Driver download (**first button on the right from model picture/under model name**)
+4. When on the driver download page, scroll down to BIOS section and click on **BIOS text next to check box**
+5. You now have access to all available and approved BIOS for your machine
+
+**P.S. - You can also use translate but the site itself is pretty self explanatory.**
+
+**2. Lenovo Support website** - https://pcsupport.lenovo.com/
+1. Find your laptop by inputting your model name
+2. Select Drivers & Software then hit Manual Update tab
+3. Open BIOS/UEFI option
+4. Expand the list and right click on BIOS Update Download option and select Copy link address
+5. Paste the address in URL and change the number to the BIOS version you want, eg. ...mobiles/k1cn**38**ww.exe to ...mobiles/k1cn**31**ww.exe
+6. Hit enter and download the BIOS file
+
+**3. LW archive** - https://cdn.laptopwiki.eu/public/
+
+{Reactions}
+athis (15) burn (9) 
+
+[9/12/2023 8:56 PM] ghostfella
+Changed the channel name: BIOS Flashback - How to downgrade or revert BIOS?
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

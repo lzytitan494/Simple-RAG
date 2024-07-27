@@ -1,0 +1,33 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Blind BIOS procedure
+==============================================================
+
+[10/9/2022 12:36 AM] mind12
+**Blind BIOS G6,G5:**
+Spam F2 for 20sec to go to BIOS.
+iGPU -> dGPU
+`up - up - Enter - ESC - Enter`
+dGPU -> iGPU
+`down - up - Enter - ESC - Enter`
+
+**Blind BIOS G7: (Tested on S7 G7)**
+Spam F2 for 20sec to go to BIOS.
+iGPU -> dGPU
+`down - down - down - Enter - ESC - Enter`
+dGPU -> iGPU
+`up - down - Enter - ESC - Enter`
+
+**Blind BIOS G8 (tested on L7 Slim G8):**
+iGPU -> dGPU:
+`down -> up -> down -> enter -> esc -> enter`
+
+dGPU -> iGPU:
+`down -> up -> enter -> esc -> enter `
+
+{Reactions}
+🙏 (4) 
+
+==============================================================
+Exported 1 message(s)
+==============================================================

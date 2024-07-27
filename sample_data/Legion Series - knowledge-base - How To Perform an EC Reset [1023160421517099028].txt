@@ -1,0 +1,24 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / How To Perform an EC Reset
+==============================================================
+
+[9/24/2022 2:44 PM] ahaya120
+Soft EC reset:
+Shutdown the laptop, unplug all cables, charger too.
+Press and hold power button for 60 seconds, keep holding even if the laptops powers on, release after 60 seconds and then power on the laptop by clicking the power button.
+
+Hard EC reset:
+Shutdown the laptop, unplug all cables, charger too.
+Open laptop, disconnect battery, disconnect CMOS, wait for 5-15mins.
+Reconnect CMOS, reconnect battery.
+Power on the device.
+
+
+[9/24/2022 2:56 PM] nonkerdoob
+Changed the channel name: How To Perform an EC Reset
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

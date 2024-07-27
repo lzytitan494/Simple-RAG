@@ -1,0 +1,64 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Hybrid Mode - Optimus - Advanced Optimus
+==============================================================
+
+[7/6/2023 4:13 PM] mind12
+# Hybrid Mode
+
+There are two main settings of Hybrid Mode:
+1. On
+2. Off, also known as dGPU mode
+
+**When Hybrid Mode is on** -iGPU is connected to the laptop's screen and is responsible for displaying content on the screen. dGPU will be working only when needed, for example when you start a game. Since iGPU is responsible for displaying content on the screen, dGPU renders frames into iGPU's frame buffer. That usually results in a small (1-3%) loss in performance. When dGPU is not used, it goes into idle power state and eventually should turn off, giving you better battery life. If the dGPU doesn't power down, check which apps are using it and close them. Be careful with apps like Afterburner - they tend to keep dGPU awake.
+
+**When Hybrid Mode is off** - dGPU is directly connected to the laptop's screen and iGPU is idle. As a result, dGPU can render all the content directly, without any performance loss. In this setting dGPU always works, thus battery life will be worse. iGPU features like Intel QuickSync are not available in this mode.
+
+Changing between these two options requires restart.
+On newer (Gen 7 and 8) laptops, there are two additional settings:
+
+1. Hybrid iGPU-only
+2. Hybrid Auto
+
+They work in the exact same way as _normal_ Hybrid Mode. The only differences are:
+
+### Hybrid iGPU-only 
+Laptop will try to disconnect dGPU (think of it as ejecting USB drives). The benefit of this is that there is no risk of dGPU waking up when you want to achieve best battery life. 
+
+### Hybrid Auto
+Automates this, by trying to disconnect the dGPU automatically when you work on battery, and reconnecting the dGPU when you connect AC adapter. 
+
+Mind, that dGPU _might_ not be disconnected in any of the above modes, if there are apps using it. You can use #legion-toolkit to deactivate it either manually or using an action.
+
+If you use external screen, it will most likely always connect directly to dGPU, meaning that even when you have Hybrid mode on, there is no loss of performance, but since dGPU needs to work, expect less battery life.
+
+# Optimus
+
+Optimus is basically NVIDIA's name for Hybrid Mode on.
+dGPU is processing data, sending it to iGPU, which then buffers frames and sends it to display. iGPUs arent powerful so they can't keep up with dGPU and this lowers fps.
+
+Optimus + ext. monitor :
+iGPU is exclusively connected to the integrated display and dGPU is exclusively connected to the external display. They do not interact with each other and do not slow themselves down. This should also be better than dGPU only which will force dGPU to be used on two displays, potentially hogging something.
+
+# Advanced Optimus
+
+First and foremost, Advanced Optimus *is not* related in anyway to Hybrid Mode settings. It is a completely separate feature, but it needs Hybrid Mode to be on, and naturally it will not work if dGPU is disconnected.
+Its like having optimus + external monitor but its on one screen capable of displaying two inputs dynamically.
+
+On some laptops, you can see additional options in nVidia Control Panel under "Manage Display Mode settings":
+
+1. **Optimus** - this is the _default_, it works exactly as Hybrid Mode on
+2. **NVIDIA GPU only** - this option, dynamically (without restart) reconnects your laptops screen to dGPU, so you can say, that it simulates Hybrid Mode off setting.
+3. **Automatic select** - automatically switch between 1 and 2.
+
+It is important to notice that when AO goes into NVIDIA GPU only mode, your laptops display will be reconnected using an Embedded Display Port connection. In Windows, you will see that you have two screens connected which is completely normal for this mode, because your screen is connected twice (think of this like two HDMI ports on a TV), one connection to iGPU, one to dGPU. NVIDIA driver will make sure that you see the correct output. This mode, just like, dGPU has no performance penalty, but the down side is that this mode can't be used when external DisplayPort screens are connected.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1126463470875971614/1126499996267720756/GPU_Mode_crash_course.png?ex=6617e0e0&is=66056be0&hm=024e818fc0021ee80cf1b99cf8a94dd1df69fb2a862d1aa066f7dc4b5b6321c2&
+
+{Reactions}
+nvidia (18) 👍 (12) gigapepe 
+
+==============================================================
+Exported 1 message(s)
+==============================================================

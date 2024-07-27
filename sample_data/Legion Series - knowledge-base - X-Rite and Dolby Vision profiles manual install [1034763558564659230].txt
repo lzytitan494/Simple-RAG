@@ -1,0 +1,53 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / X-Rite and Dolby Vision profiles manual install
+==============================================================
+
+[10/26/2022 3:10 PM] mind12
+**X-Rite:**
+If you want to download X-Rite icc profiles manually (16:10 HDR panels only), replace the YYYY with your model and replace the XXXXXXXX with your serial number.
+https://supportapi.lenovo.com/ColorCalibration/GetFileBySn?sn=1SYYYYXXXXXXXX
+
+Example:
+model: 82JQ
+Serial: ABCD1234
+URL: https://supportapi.lenovo.com/ColorCalibration/GetFileBySn?sn=1S82JQABCD1234
+You will get a dowload URL to a .zip file, open it in a new tab without quotes.
+
+**Link for getting the latest version of x-rite app from official servers.**
+Open the following URL and copy the download URL as shown in the picture.
+https://downloads.xrite.com/downloads/autoupdate/XRiteColorAssistant/Lenovo/XRiteColorAssistant_win_appcast.xml
+
+**Installing and using the downloaded profiles:**
+Copy the downloaded ICC profiles to: `C:\Windows\System32\spool\drivers\color`
+Open Control Panel, go to Color management and on the Devices page click Add (if it's greyed out tick use my settings for this device) and pick the profile you wish to use for your device. 
+**You must do this for hybrid mode and dgpu mode also because they are separate devices.**
+
+**Get Dolby Vision:**
+Download the latest package from here: https://support.lenovo.com/us/en/downloads/ds543424
+Insert your serial number to pass the compatibility check.
+Install the package or extract it and use the ProvisionDolbyVision.exe to deploy the PQCONFIG.DV file to your machine.
+
+Install the HEVC Video Extensions for Dolby Vision: ``ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq``
+Mirror - https://codecpack.co/download/hevc-video-extensions.html
+
+Install Dolby Vision to change picture mode  - https://apps.microsoft.com/store/detail/dolby-vision/9MVMZ93N61T9?hl=en-us&gl=us
+Test Dolby Vision: Supported content in the Netflix app or download the Dolby Access app.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1034763558564659230/1034763558896021544/unknown.png?ex=661f9929&is=660d2429&hm=aee13f881960d57159d1ac76f692214fe2aecd7490869bebb2915a90ff30314d&
+
+{Reactions}
+❤️ (8) 
+
+[10/26/2022 3:28 PM] mind12
+Changed the channel name: X-rite and DolbyVision profiles manual install
+
+
+[10/26/2022 3:35 PM] mind12
+Changed the channel name: X-Rite and Dolby Vision profiles manual install
+
+
+==============================================================
+Exported 3 message(s)
+==============================================================

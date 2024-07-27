@@ -1,0 +1,91 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / No OS Legion Setup
+==============================================================
+
+[10/10/2022 11:24 PM] nonkerdoob
+How to set up your no-OS Legion 5/5Pro
+
+Gen 7+ devices may require an external mouse since the drivers for the touchpad are not included in the ISO.
+
+- Go to BIOS and make sure Boot mode is set to UEFI (it may available only on the L5)
+- Create a bootable Windows USB media (ie. Rufus) and boot choosing the EFI drive on the boot menu pressing F12
+- If you want to skip MS account sign in on windows, use this guide - <https://www.windowscentral.com/how-set-windows-11-without-microsoft-account>
+(May need to disable SecureBoot in BIOS)
+- If you want to avoid the installation of apps like Tiktok and Candy Crush by Microsoft, set your Language to ``English (World)`` during setup. Change to English US or your locale after set up.
+- Activate Windows
+- (Optional) Install and activate Office
+- Install Lenovo Vantage from the MS Store, switch to hybrid mode, restart, search for driver updates and install them
+- Install Windows updates
+- Install Lenovo Hotkey from the MS Store: https://www.microsoft.com/en-us/p/lenovo-hotkeys/9pcmmnb260tx
+- If you have a Legion with pressure sensitive keys - https://www.microsoft.com/en-us/p/hydra-for-peratech-force-enabled-keyboards/9pcglzmq474r
+- For Models with Tobii eye tracking - https://help.tobii.com/hc/en-us/articles/5278376717329-Driver-downloads-for-Lenovo
+- Install the factory Lenovo power profiles: https://discord.com/channels/761178912230473768/1029086081573990471
+- Install the Nahimic app for improving the sound: https://www.microsoft.com/en-us/p/nahimic/9n36ppmp8s23?activetab=pivot:overviewtab
+- (Recommended Optional) Install LegionToolkit as a vantage replacement and support the developer: https://github.com/BartoszCichecki/LenovoLegionToolkit/releases
+- **(Optional Gen 6 and some Gen 7 only, app is no longer maintained)** Install LegionFanControl: https://legionfancontrol.com/
+- (Optional) Install the latest/recommended Nvidia driver for your GPU from the Nvidia site, disable auto update in Geforce experience
+https://discord.com/channels/761178912230473768/1044177430644019240
+- (Optional) Install O&O ShutUp10:Free antispy tool for Windows 10 and customize for your needs (you can disable driver updates through windows update with this) https://www.oo-software.com/en/shutup10
+
+**Dolby Vision and X-Rite**
+Get Dolby Vision and X-Rite FOR SUPPORTED MODELS here - 
+https://discord.com/channels/761178912230473768/1034763558564659230
+
+Custom ICM files:
+Custom L5Pro: https://discord.com/channels/761178912230473768/870621974529966080/870649550661115914
+Custom L5(21) 165Hz: https://discord.com/channels/761178912230473768/768238185342828594/870649695364599832
+
+
+Enjoy!
+
+Full guide - <https://laptopwiki.eu/index.php/docs/how-to-set-up-your-no-os-legion/>
+
+{Embed}
+https://www.microsoft.com/en-us/p/lenovo-hotkeys/9pcmmnb260tx
+Lenovo Hotkeys - Official app in the Microsoft Store
+Lenovo Hotkeys is an upgrade version of Lenovo Utility. It supports the hotkey function on Lenovo notebook computers by providing On Screen Display (OSD) to show the current hotkey status. In addition, the user interface is enhanced, and hotkey introduction and user guide are provided to better facilitate users.
+Examples of functions and messag...
+https://images-ext-1.discordapp.net/external/amb4tJvr7g1ZAsC6KXxatcbq643MftIV0Yi2QY0EOaU/https/store-images.s-microsoft.com/image/apps.368.14166837201065565.2a700c60-5075-4b8e-a249-ba690993d613.6cf074e0-85de-49a1-b665-6928176753a8
+
+{Embed}
+https://www.microsoft.com/en-us/p/hydra-for-peratech-force-enabled-keyboards/9pcglzmq474r
+Get Hydra™ for PERATECH force-enabled keyboards - Microsoft Store
+Hydra™ is the control program for your PERATECH force-enabled keyboard. It is an interface to customize key-force response ONLY on gaming notebooks with PERATECH’s Keyboard Force Control.
+https://images-ext-1.discordapp.net/external/_aXmkfeRRaXJAVu3Uf0FCRAFxBVpu1n2OYSMYDhGRwg/%3Fw%3D120%26h%3D120%26q%3D60/https/store-images.s-microsoft.com/image/apps.64803.14174531912264492.f8ce249b-78d9-475f-ad58-1265bc87c08d.a6c4ef6c-2a55-4645-b14c-7ec2465efff2
+
+{Embed}
+https://help.tobii.com/hc/en-us/articles/5278376717329-Driver-downloads-for-Lenovo
+Driver downloads for Lenovo
+Lenovo Legion YX80 Series (2023 model)
+(Y580/Y780/Y980)
+Offline installer: 4.182.0.29391App version: 1.68.29247.0
+Download
+Release notes
+
+Security update
+UI improvement
+Backend update
+
+Lenovo Legio...
+
+{Embed}
+https://www.microsoft.com/en-us/p/nahimic/9n36ppmp8s23?activetab=pivot:overviewtab
+Nahimic - Official app in the Microsoft Store
+Nahimic is an Audio Driver that your PC manufacturer selected to give you an optimized audio experience on laptops, motherboards, and more. It is a trusted driver designed to optimize and tune the audio performance on your computer.
+
+Nahimic 3D sound technologies recreate all spatial dimensions of sound (7.1 channels) on a regular stereo liste...
+https://images-ext-1.discordapp.net/external/zwjveZ4rUO4iL357a0nWWUfS0DTbc-4ECIeYlZOEuOk/https/store-images.s-microsoft.com/image/apps.1098.13938148816583016.fbf2909a-761a-411d-847f-862f20132ed3.0041c5d5-1d9b-4ba2-a6e9-34431c6901e4
+
+{Embed}
+https://github.com/BartoszCichecki/LenovoLegionToolkit/releases
+Releases · BartoszCichecki/LenovoLegionToolkit
+Lightweight Lenovo Vantage and Hotkeys replacement for Lenovo Legion laptops. - BartoszCichecki/LenovoLegionToolkit
+https://images-ext-1.discordapp.net/external/N_bNiCc_0oFhgce7LsbyAF4R1X36ycEAYzKuHDBWoxE/https/opengraph.githubassets.com/18b3529667e3f9ca6e7067839975c3c1a8500271f11bd962a17bafa3f97431bc/BartoszCichecki/LenovoLegionToolkit
+
+{Reactions}
+😃 (7) 👍 
+
+==============================================================
+Exported 1 message(s)
+==============================================================

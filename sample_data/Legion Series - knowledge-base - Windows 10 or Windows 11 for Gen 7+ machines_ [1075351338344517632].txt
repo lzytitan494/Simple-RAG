@@ -1,0 +1,19 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Windows 10 or Windows 11 for Gen 7+ machines?
+==============================================================
+
+[2/15/2023 3:12 PM] mind12
+While Windows 10 could work, driver updates and stability is not guaranteed.
+The new hybrid Intel CPU architecture works best on Win 11 so please stick to that.
+Reference: <https://www.intel.com/content/www/us/en/support/articles/000088749/processors/intel-core-processors.html>
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1075351338344517632/1075351338730389545/image.png?ex=661f997a&is=660d247a&hm=4d76f6c62fc32b14395e929843c032e4e97b03a988948ec9583a3d35025e1849&
+
+{Reactions}
+athis (6) 
+
+==============================================================
+Exported 1 message(s)
+==============================================================

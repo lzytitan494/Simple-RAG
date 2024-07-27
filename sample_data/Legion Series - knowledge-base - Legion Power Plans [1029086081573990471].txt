@@ -1,0 +1,57 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Legion Power Plans
+==============================================================
+
+[10/10/2022 11:10 PM] nonkerdoob
+```diff
+- If you have Gen 7 or above with S0 / Modern Standby enabled, Performance Power Plan will not work. 
+
++ It is recommended to use the stock balanced power plan in Windows
+```
+Enter this command in an elevated prompt to see available power states
+```powercfg /a```
+
+
+Extract the attached zip and run setup.cmd with admin privileges.
+Legion Balanced mode is the same as Windows provided Balanced. 
+2021 and 2022 Balanced and Performance versions have no differences.
+
+Legion Quiet and Performance plans have additional tweaks for better performance and efficiency.
+Legion Quiet 2022 gives better performance than 2021 version, for further details: 
+https://discord.com/channels/761178912230473768/958336296621867038/967765295525670992
+
+You can easily edit power plan settings (even hidden) with this PowerSettingsExplorer tool.
+There is also PowerPlanTrace provided here for tracing power plan setttings changes.
+Latest version is here in the first post, please always verify the hash after downloading!
+<https://forums.guru3d.com/threads/windows-power-plan-settings-explorer-utility.416058/>
+
+**If anyone has the issue where they could see Performance plan with Vantage but can't with LLT**
+1. Enable Vantage
+2. Swap to regular Balanced power plan
+3. Delete Legion power plans
+4. Open LegionPowerPlans 202x 
+5. Clean POWER.LOG and save
+6. Run Setup.bat
+7. Check if you have all power plans by running Fn+Q
+8. Use powersettingsexplorer to make it so Legion Performance power plan is Balanced instead of High Performance
+9. Disable Vantage
+
+Download Links -
+[Legion Gen 6 (2021)](https://cdn.discordapp.com/attachments/945968435018498061/1149657912071954475/LegionPowerPlan_2021.zip)
+[Legion Gen 7 (2022)](https://cdn.discordapp.com/attachments/945968435018498061/1149657911497326642/LegionPowerPlan_2022.zip)
+[Legion Gen 8 (2023)](https://cdn.discordapp.com/attachments/945968435018498061/1149657911140827196/LegionPowerPlan_2023.zip)
+
+
+[3/26/2024 8:16 PM] nonkerdoob
+**Updated Download Links** -
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1029086081573990471/1222194856986808412/LegionPowerPlan_2022.zip?ex=661e8f29&is=660c1a29&hm=a98229449448c36ee5534283f1bd509ea736d82e8f564688297209729c881fbc&
+https://cdn.discordapp.com/attachments/1029086081573990471/1222194857326678137/LegionPowerPlan_2023.zip?ex=661e8f29&is=660c1a29&hm=5cceef3980c5758db1d07422e8641187f6faf2d0996f0f53be0a7d8f2bc66e4f&
+https://cdn.discordapp.com/attachments/1029086081573990471/1222194857653567498/LegionPowerPlan_2021.zip?ex=661e8f29&is=660c1a29&hm=c8cef7287722cfd1a443b0f208dadeded841c7da2083e54d3ee5815dc2dbbac4&
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

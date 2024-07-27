@@ -1,0 +1,16 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Boost Mode in Power Plan Settings
+==============================================================
+
+[10/10/2022 11:14 PM] nonkerdoob
+How to show Processor performance boost mode in the power plan settings?
+1. Run cmd as administrator & execute
+```powercfg -attributes sub_processor perfboostmode -attrib_hide```
+2. Configure it in your preferred power plan
+```Control Panel/Power Options/Change Plan Settings/Change advanced power settings/Processor power management/Processor performance boost mode```
+
+
+==============================================================
+Exported 1 message(s)
+==============================================================

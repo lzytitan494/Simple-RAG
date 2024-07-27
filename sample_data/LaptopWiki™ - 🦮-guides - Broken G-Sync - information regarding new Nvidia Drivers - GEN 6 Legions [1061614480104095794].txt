@@ -1,0 +1,46 @@
+==============================================================
+Guild: LaptopWiki™
+Channel: --> Start Here / 🦮-guides / Broken G-Sync - information regarding new Nvidia Drivers - GEN 6 Legions
+==============================================================
+
+[1/8/2023 5:26 PM] ru1n.
+**Update**: I want to let everyone know that I made the issue to the reddit NVIDIA driver threads and let m_w_h (who is in charge of handling/reporting the nvidia driver issues) know about this.
+My main post can be followed here:
+https://www.reddit.com/r/nvidia/comments/15luoca/comment/jvlqbpf/
+
+
+**THIS ISSUE IS HAPPENING ONLY ON GEN 6 DEVICES. (2021 LEGIONS)**
+
+
+Every driver past **511.23** broke G-Sync for most users. Having G-Sync on causes micro stuttering, overshoot and flickering in certain games. If you notice any of these, try to turn G-Sync off and see if it's the cause of your problems. 
+It was forwarded to Nvidia and to Reddit already. A fix is yet to be announced/published, however, might take a good chunk of time and patience until that will happen.
+This issue is also present on Samsung, LG, Gigabyte and perhaps few other monitor manufacturers, so it can affect desktop users as well. **IT IS NOT A LEGION ONLY ISSUE. It's a driver-level problem so it's all on NVIDIA to fix.**
+You can read more info about it here:
+https://github.com/JetBrains/compose-jb/issues/1648
+https://forums.blurbusters.com/viewtopic.php?t=10044
+
+**Main culprit to this can be the Vesa VRR implementation, which perhaps got some new pipeline added or modification in the upcoming drivers past 511.23 and that caused problems with G-Sync aftewards since Legion displays are just G-sync Compatible which translates to being Vesa VRR/Freesync Screen. Based on more research & help from Kira, we managed to pinpoint a route that leads to panels that are lacking DSC support will be prone to g-sync issues. Precisely any panel from 2021 to 2022 that is not a late CSOT T3 MNG007DA1-8 2021 model. Anything other than the one mentioned are lacking DSC support which makes them be prone to G-Sync problems.**
+
+
+If you still want to use G-Sync, despite having the above issue(s), trying one of these methods can fix your problems:
+
+
+• Turning on HDR in Windows.
+• Lowering in-game resolution by 1 step. (Example: from 2560x1600 to 2560x1440)
+• Capping the FPS using the Nvidia Control Panel or RTSS software. (Riva Statistics Tuner that comes alongside MSI Afterburner) For example: your game runs at 80 average FPS and capping it to 60 FPS will prevent any G-Sync stutter/micro stutter or flickering from happening as long as the fps can be sustained around the selected cap.
+• Turning Hybrid/Optimus ON (so that the iGPU can handle the main display and the NVIDIA GPU will handle the game itself) should prevent the flickering.
+• Downgrading to an older driver before  the G-Sync got broken, such as 511.23 or below.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1061614480104095794/1061614480271872030/Nvidia-Gsync.jpg?ex=661bc487&is=66094f87&hm=e3bdee42785464235113879fc48a339fd5be9a65a2566528b1e000bca9147999&
+
+{Reactions}
+👌 (7) 
+
+[10/24/2023 2:37 PM] ru1n.
+Changed the channel name: Broken G-Sync - information regarding new Nvidia Drivers - GEN 6 Legions
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

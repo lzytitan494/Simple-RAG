@@ -1,0 +1,68 @@
+==============================================================
+Guild: LaptopWiki™
+Channel: --> Start Here / 🦮-guides / GPU Drivers installation guide
+==============================================================
+
+[1/8/2023 7:03 PM] ru1n.
+1. Download the Nvidia/AMD Driver that you plan to install.
+2. Download DDU. (Display Driver Uninstaller) (**skip this step if your current driver does not have any issues**)
+3. Download WuShowHide. (Troubleshooting Windows app that helps you hide or show Windows Updates)
+
+*Helpful download links*:
+
+• Nvidia Driver: https://www.nvidia.com/Download/Find.aspx?lang=en-us
+
+• AMD Driver
+https://www.amd.com/en/support (*Make sure to download the  22.5.1  (WHQL) version*)
+22.5.1 link - https://www.amd.com/en/support/kb/release-notes/rn-rad-win-22-5-1
+
+• INTEL Driver
+https://www.intel.com/content/www/us/en/download-center/home.html (latest stable version) 
+
+• DDU (Display Driver Uninstaller)
+https://www.wagnardsoft.com/
+
+• WuShowHide (Troubleshooting Windows app that helps you hide or show Windows Updates)
+https://www.majorgeeks.com/mg/getmirror/wushowhide,1.html
+
+
+
+**The process of installing the driver**:
+*(Skip steps 2, 3, 4 and 5 if your current driver does not have any problem/issue!)*
+
+```TURN HYBRID MODE ON (this is optional but it ensures that in case something happens such as display might go black, you would be saved by the iGPU)```
+
+1. Turn internet OFF.
+2. Hold the **SHIFT** key while also pressing "Restart" on the computer.
+3. Go the following path:   Troubleshoot - > Advanced options - > Startup Settings - > click on Restart
+4. Selecting the "4" option by pressing "4" key to enable Safe Mode.
+5. Open DDU, select the GPU driver that you want to uninstall (be it Nvidia or AMD) and then press on "clean and restart"
+6. Install the driver that you've downloaded. If it's the Nvidia Driver, you select "Custom(Advanced)" from its install options, following by unchecking the "GeForce Experience" then installing the driver.
+6.1. Tick the "Clean Install" checkbox inside the Custom(Advanced) if your previous driver did not have any problem, just to wipe of all the data from any previous installation/driver. Restart afterwards to ensure everything is working properly.
+7. (Read the message at the bottom of the guide before you proceed with this step) - Open WuShowHide then click on "Hide Updates" and let it search for the update(s) provided by windows and hide it/them.
+
+The update(s) should have the following name(s) in WuShowHide:
+
+• *NVIDIA - Display(for Nvidia Driver)*
+• *Advanced Micro Devices, Inc - Display(for AMD Driver)*
+
+**(If the search results do not show anything with internet off, turn it on and do another scan with WuShowHide)**
+
+*GeForce Experience is not recommended as it might have various interactions or conflicts either with Windows or the driver itself and can do more harm than good. The game optimization option that it provides can be done by the user himself/herself. An app alone won't increase your FPS just by having it. It's a piece of bloatware that is just wasting your space on the drive.*
+
+• **WuShowHide is no longer necessary, unless you plan to downgrade and install a driver below 512.36 or you're installing the recommended AMD Driver. If you do not plan to do any of these, just keep internet turned OFF during the DDU and installation of the driver(s) that you plan to install/uninstall.**
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1061638716227076146/1061638716692647986/rararara.jpg?ex=661bdb1a&is=6609661a&hm=38d9925576a3ffafa23c9f42f956e9c6a97e710e4d329364d7e4df25e37e2cf5&
+
+
+[5/6/2023 2:40 AM] ru1n.
+**Here's how you can backup Nvidia control panel settings**:
+
+You can keep 3D settings between driver updates. They are stored in two .bin files in C:/ProgramData/NVIDIA Corporation/Drs (usually ProgramData is hidden, check this out in case you don't know how to reveal hidden files: https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5).
+ Backup nvdrsdb0.bin (Global settings) and nvdrsdb1.bin (Program specific settings). Then restore them to their original folder after clean driver install.
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

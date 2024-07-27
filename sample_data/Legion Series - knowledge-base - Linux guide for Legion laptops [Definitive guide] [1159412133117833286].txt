@@ -1,0 +1,493 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Linux guide for Legion laptops [Definitive guide]
+==============================================================
+
+[10/5/2023 2:19 PM] tendotechmo
+# 🐧 LINUX GUIDE FOR LENOVO LEGION LAPTOPS 🐧 
+**LAST UPDATE : 24 March 2024** 
+
+❗ This guide was specifically made for Lenovo Legion laptops. This should help you go through all the issues you might have, general recommendations, tips and tricks for performance and battery life. The guide will be updated every so often, so keep an eye out. Special thanks to MrDuartePT for helping me with the guide!
+## * Table of contents:
+### [Pros and Cons](https://discord.com/channels/761178912230473768/1159412133117833286/1159412178684751923)
+### [Choosing your linux distribution](https://discord.com/channels/761178912230473768/1159412133117833286/1159412217649836043)
+### [Installing Legion tools and drivers](https://discord.com/channels/761178912230473768/1159412133117833286/1159412391633768499)
+### [Battery Life optimization](https://discord.com/channels/761178912230473768/1159412133117833286/1159412547255021589)
+### [Switchable Graphics](https://discord.com/channels/761178912230473768/1159412133117833286/1159412936910057533)
+### [General bugs and fixes](https://discord.com/channels/761178912230473768/1159412133117833286/1159413150366564394)
+### [General stuff and misc websites](https://discord.com/channels/761178912230473768/1159412133117833286/1159413400225468426)
+
+{Reactions}
+linus (12) 👍 (3) chad (4) 
+
+[10/5/2023 2:20 PM] tendotechmo
+# * __Pros and Cons__
+To put it simply, **switch to linux if you:**
+* Value your privacy,
+* Want a somewhat better desktop experience and customizability, without being limited to using 3rd party tools,
+* Want a better dark mode experience, without having the horrible white theme apps not respecting the system theme preferences,
+* Better gaming experience,
+* Somewhat better battery life,
+* Easier driver installation,
+* Controller support out of the box with little to no configuration required,
+* Non-breaking system updates that actually give you better features and not risking system crashes or whatnot,
+* Less OS storage used out of the box.
+
+**Don't switch to linux if you:**
+* Use apps that refuse to work on linux but they are used in the industry, thus not allowing you to simply replace it with a different apps and a somewhat different workflow,
+* Your system won't play nice with Linux (broken sound, distorted colors, etc),
+* Believe your battery life and gaming performance will improve by 3x or 4x or whatever,
+* Play games that have kernel level anticheat or anything similar to that (use websites like areweanticheatyet.com to check if your favorite game works on linux),
+* Value your time to deal with small or big hinderences.
+
+{Reactions}
+👍 (3) 
+
+[10/5/2023 2:20 PM] tendotechmo
+# * __Choosing your linux distribution__
+List made based on my own experience with these distributions. **Your mileage may vary!**
+## Recommended
+### EndeavourOS (Arch based)
+A distribution focused on a user-friendly installation process, particularly suitable for those new to Arch. It boasts an improved installer compared to Archstall and comes with an Nvidia installer script.
+### Pop_OS! (Ubuntu based)
+Though based on an older Gnome version and Ubuntu base (22.04), it is comprehensive and provides peace of mind for daily tasks. All packages besides the desktop are still updated, even the kernel. Comes with a in-house scheduler, power profile and graphics switcher.
+### Nobara (Fedora based)
+A hobby distro based on fedora with gaming configurations pre-set, including a modern switching graphics tool and the Legion linux driver.
+### Linux mint (Ubuntu based)
+This distribution emphasizes an easy-to-use interface, making it ideal for anyone who wants to avoid the terminal. Comes with 3 desktop environment choices. Althought it provides older packages for some apps or libs for gaming, they can be circumvented by using PPAs.
+
+
+[10/5/2023 2:20 PM] tendotechmo
+## Mixed recommended
+### Manjaro
+A "fork" of Arch Linux. Not recommended due to a high risk of package breaking for those who plan to use the AUR. It has faced various issues and a decline in trustworthiness following past internal incidents. 
+### Ubuntu (debian based)
+Despite being widely recognized as the best starter and the most popular distribution globally, it is criticized for its association with "corporate" ideology. It enforces the use of the proprietary package format (snaps) that cause issues with many apps. Additionally, there are concerns about telemetry and tracking.
+### Fedora
+A linux distribution that promotes new technologies, is more up to date and more compatible for newer hardware. Requires a bit of a learning curve. I recommend this guide to get you started:
+https://github.com/devangshekhawat/Fedora-39-Post-Install-Guide
+### Arch linux
+Don't bother using it UNLESS you know how to install and configure it properly. Archstall is not a good solution for a "easy to install Arch" script, as it comes with its own issues. May scare newbies.
+## AVOID!
+### Debian (Unless you use Debian Testing)
+Despite being extremely stable with little to no breakages, it is not suitable for legion laptops. Updates (especially MAJOR ones) are pushed slowly. Gaming laptops need newer packages for the latest fixes and optimization.
+### Business built distributions
+Don't use Oracle Linux, Clear Linux or anything made for business purposes. Self explanatory.
+### Obscure/outdated distributions
+Anyone can make a distro, but that doesn't mean you should use them. Stick to what is mostly used and popular. Obscure distros that promote "performance", "better gaming performance" etc can be easily replicated on any distro. Also, a distribution should be maintained by a large trustable team, not by randoms.
+
+{Embed}
+https://github.com/devangshekhawat/Fedora-39-Post-Install-Guide
+GitHub - devangshekhawat/Fedora-39-Post-Install-Guide: Things to do...
+Things to do after installing Fedora 39. Contribute to devangshekhawat/Fedora-39-Post-Install-Guide development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/wMWYxLQvyJaAtLkBg3HMCmIdFkG_YeqkbsFXIKPtbNQ/https/opengraph.githubassets.com/0f01390f207d186c71931764b6c4c1e3ffd0e1bc4efaff96a3037a496c5bcdd7/devangshekhawat/Fedora-39-Post-Install-Guide
+
+
+[10/5/2023 2:20 PM] tendotechmo
+# * __Installing Legion tools and drivers__
+This part of the guide will teach you how to install the lenovolegionlinux package. This will allow you to use most, if not all the legion exclusive features on linux (fan control, panel overdrive, power profiles that will also change the battery profile from the linux distribution itself). It will also come with a GUI that will allow you to easily access these features.
+The only problem is that after each new driver update, the legion driver MIGHT delete itself. This has been fixed on the recent builds, however if you encounter this issue, use the "install via DKMS" part of the guide.
+
+## Distro packages (highly recommended)
+- **Debian/Ubuntu**:
+  - Official PPA (TAG version): [here](https://github.com/johnfanv2/LenovoLegionLinux/blob/main/package_repo)
+  - Official PPA (GIT version): [here](https://mrduartept.github.io/LLL-pkg-repo)
+- **Fedora/RHEL Base Distros**:
+  - Official PPA (TAG version): [here](https://github.com/johnfanv2/LenovoLegionLinux/blob/main/package_repo)
+  - Official PPA (GIT version): [here](https://mrduartept.github.io/LLL-pkg-repo)
+- **Arch Base Distros**:
+    - [lenovolegionlinux-git](https://aur.archlinux.org/packages/lenovolegionlinux-git)
+    - [lenovolegionlinux-dkms-git](https://aur.archlinux.org/packages/lenovolegionlinux-dkms-git)
+- **Gentoo Base Distros**:
+    - [GURU Overlay](https://gitweb.gentoo.org/repo/proj/guru.git)
+    - [ebuild](https://gpo.zugaina.org/sys-firmware/lenovolegionlinux)
+- [NixOS](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=lenovo-legion)
+
+
+[10/5/2023 2:21 PM] tendotechmo
+## Manual Install Module
+### **Requirements**
+You will need to install the following:
+- **Debian/Ubuntu**:
+```
+sudo apt-get update
+sudo apt-get install -y make gcc linux-headers-$(uname -r) build-essential git dkms lm-sensors wget python3-pyqt5 python3-yaml python3-venv python3-argcomplete python3-darkdetect
+```
+- **Fedora/RHEL Base Distros**:
+```
+sudo dnf install -y kernel-headers kernel-devel dmidecode lm_sensors PyQt5 python3-yaml python3-argcomplete
+sudo dnf groupinstall "Development Tools"
+sudo dnf group install "C Development Tools and Libraries"
+sudo dnf install dkms openssl mokutil
+```
+- **Arch Base**:
+```
+sudo pacman -S linux-headers base-devel lm_sensors git dkms dmidecode python-pyqt5 python-yaml python-argcomplete
+```
+
+### Installing via DKMS
+DKMS is a utility that eliminates the need to manually rebuild and reinstall the driver after every kernel update. DKMS will do the reinstallation automatically.
+```
+git clone https://github.com/johnfanv2/LenovoLegionLinux.git
+cd LenovoLegionLinux
+sudo cp ./kernel_module/* /usr/src/LenovoLegionLinux-1.0.0 -r
+sudo dkms add -m LenovoLegionLinux -v 1.0.0
+sudo dkms build -m LenovoLegionLinux -v 1.0.0
+sudo modprobe legion_laptop  #You can enter this line or reboot ur device.
+```
+```
+sudo cp ./kernel_module/* /usr/src/LenovoLegionLinux-1.0.0 -r
+sudo dkms add -m LenovoLegionLinux -v 1.0.0
+sudo dkms build -m LenovoLegionLinux -v 1.0.0 
+sudo modprobe legion_laptop`  You can enter this line or reboot ur device.
+```
+After it's done, to check if module is built and installed correctly, enter the following command
+```sudo lsmod |grep legion_laptop```
+The output should show that legion_laptop and platform profile modules are loaded. 
+
+``` legion_laptop          86016  0` 
+` platform_profile       16384  2 legion_laptop,ideapad_laptop` 
+` wmi                    32768  4 video,wmi_bmof,legion_laptop,ideapad_laptop```
+
+
+[10/5/2023 2:21 PM] tendotechmo
+# * __Battery Life optimization__
+Battery life on linux is not great, as it was not optimized for laptops. You can be lucky and get more than 8 hours of battery life on light tasks out of the box, or have horrible battery life. This section will help you increase battery and get it on par with windows or even better.
+## CPU P-state drivers
+**Intel** for a long time (since kernel 4.12 I believe) have a new way to manage their cpu power parameter when on battery, this driver is called intel-pstate.
+Intel-pstate is one neat feature since kernel version 4.12 that allows your intel cpu to scale properly on AC and Battery. This is great as it respects your cpu frequency and efficiently use your cpu cores properly.
+The intel-pstate should be the default driver on any distro but you can check by using this command:
+```
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver
+```
+If the output says `intel-pstate`, then you are alright, but if the output says `acpi_cpufreq_init` or anything else that doesn't have `_pstate` at the end, you need to add this to your kernel cmdline:
+```
+# For systemd-boot
+sudo kernelstub -a 'intel-pstate=enable'
+# For GRUB (... indicate to not change what is in the line already):
+sudo nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT='... initcall_blacklist=acpi_cpufreq_init intel_pstate=enable'
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+
+[10/5/2023 2:22 PM] tendotechmo
+**AMD** also has a cpu scale driver called `amd_pstate` that will basically do what intel_pstate does but for amd cpus.
+To check if you have this scaling driver, type this command:
+
+```
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver
+```
+If the ouput said `amd-pstate` you are alright if the output say `acpi_cpufreq_init` you need to add this to your kernel cmdline:
+```
+# For systemd-boot
+sudo kernelstub -a 'amd_pstate=active'
+# For GRUB (... indicate to not change what is in the line already):
+sudo nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT='... initcall_blacklist=acpi_cpufreq_init amd_pstate=active'
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+Another neat thing about amd_pstate is that you can use this script to change the scaling between AC and battery. Not really necessary, but it's good to have a script that changes how the scaler should work between AC and battery : https://github.com/jothi-prasath/auto-epp
+
+# WARNING
+* USE ONLY THE _PSTATE DRIVERS FOR YOUR CPU. USING THE INCORRECT ONE WILL CAUSE ISSUES.
+* Don't use `acpi_cpufreq` or any cpu scaling drivers that don't have `_pstate`. They are outdated and broken for modern cpus (even older), thus hindering your performance and battery life.
+
+
+[10/5/2023 2:22 PM] tendotechmo
+## Battery power profile tools
+### Notes
+Linux comes with some tools that attempt to improve linux battery life. Some are easy to use, others will get in your way and will need configurations. Some will work greatly with your hardware, others will barely do anything. 
+# WARNING
+* Some of the tools will not work together with the rest, so use only ONE of these tools (exceptions may apply). Make sure you remove all the tools besides the one you want to currently use.
+* Usually, the battery tool bundled with the distribution you are installing may be just enough. Your mileage may vary!
+* Do **NOT** use configuration files from laptops you don't **OWN**. This may cause severe issues with your hardware! You have been warned.
+## Auto-Cpufreq
+A simple script that changes how the cpu should scale depending if you are on AC or Battery life. This plays greatly with the pstate scaling drivers but it will conflict with the rest of the tools, so make sure you uninstall them beforehand. May cause issues with some cpus.
+Install instructions:
+- **Debian/Ubuntu**:
+```
+git clone https://github.com/adnanhodzic/auto-cpufreq.git
+cd auto-cpufreq && sudo ./auto-cpufreq-installer
+```
+- **Fedora/RHEL Base Distros**:
+```
+git clone https://github.com/adnanhodzic/auto-cpufreq.git
+cd auto-cpufreq && sudo ./auto-cpufreq-installer
+```
+- **Arch Base**:
+```
+sudo pacman -S auto-cpufreq
+```
+Now you need to edit /etc/auto-cpufreq.conf as the file explains all the parameters
+```
+sudo nano /etc/auto-cpufreq.conf
+```
+An example config file by MrDuartePT: https://github.com/MrDuartePT/hyprland-dotfiles/blob/master/etc/auto-cpufreq.conf (use it with extra caution!)
+
+[For more info on auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq/tree/fdb20f5ea2f94ed9146299b87ad03dc1f64c79ec#auto-cpufreq-installer)
+
+
+[10/5/2023 2:22 PM] tendotechmo
+## TLP
+TLP is one of the best, most advanced tools that will easily extend your battery life and reduce energy consumption. It will also apply configurations based on battery or AC. Can cause issues if incorrectly configured. This will conflict with other tools.
+Install instructions:
+- **Debian/Ubuntu**:
+```
+sudo apt-get install tlp
+```
+- **Fedora/RHEL Base Distros**:
+```
+sudo dnf install tlp
+```
+- **Arch Base**:
+```
+#stable version
+sudo pacman -S tlp
+```
+For easier tool access, install the gui version here:
+https://github.com/d4nj1/TLPUI
+
+After that we can configure TLP.
+Open TLPUI and change your settings(Strictly optional. Default settings are fine) . Enable the tool by typing in terminal :
+```
+sudo systemctl enable tlp.service && sudo systemctl start tlp.service
+```
+
+
+[10/5/2023 2:22 PM] tendotechmo
+## Powertop
+Powertop is a neat tool that allows you to optimize some parts of the hardware to go on a low power state when not in use. Also allows you to check the current total power usage. Works together only with TLP/auto-cpufreq, if you use the tool to optimize the hardware. It will work with the other tools if you use it to check the power usage only.
+Install instructions:
+- **Debian/Ubuntu**:
+```
+sudo apt-get install powertop
+```
+- **Fedora/RHEL Base Distros**:
+```
+sudo dnf install powertop
+```
+- **Arch Base**:
+```
+sudo pacman -S powertop
+```
+After installing it, you can use the app by typing :
+```
+sudo powertop
+```
+If you want to use it to optimize the hardware power usage (TLP/auto-cpufreq ONLY), use these commands:
+```
+# Optimize the app to know what and how to optimize it:
+
+sudo powertop --calibrate
+
+# Then, run the command to automatically optimize the hardware. You can also do it when the system boots, but I recommend to not do that to avoid issues:
+
+sudo powertop --auto-tune
+```
+
+
+[10/5/2023 2:23 PM] tendotechmo
+# * __Switchable graphics__
+Linux has an interesting attempt at trying to make switchable graphics (intel/amd cpu with amd/intel/nvidia gpu) work good. However, it sometimes comes with the usual issues regarding the gpu being awake all the time (thus consuming a lot of power) or not working at all (hindering gaming performance significantly)
+This part of your guide will teach you how to config the switchable graphics properly.
+# WARNING
+* Same rules apply for this section too. Use only ONE of the tools below. Uninstall the current ones you have BESIDES the tool you want to use.
+* Your mileage may vary! 
+## Installing nvidia drivers
+Unlike the intel/amd gpu drivers, some distributions don't come with nvidia graphics drivers installed by default. Skip this part of the guide if you already installed the drivers or your distro bundles them.
+The majority of the linux distributions come with a gui that allows you to easily install such drivers. Check them out before continuing with the guide. Remember to **ALWAYS** install the latest and greatest nvidia driver **UNLESS** there are major issues that hinder your experience.
+
+# Tools that allow easy switchable graphics
+## System76-power
+A 2-in-1 tool that offers power profiles and switchable graphics. The only issue is that you need to reboot to apply the switchable graphics, however it is done to prevent issues. New updates have integrated the  "pstate" and "epp" power drivers. Other distros will be "forced" to use the CLI, whereas on POP_OS you have a menu at the top.
+More details here:
+https://github.com/pop-os/system76-power
+
+
+[10/5/2023 2:23 PM] tendotechmo
+## Supergfxctl
+A tool that allows you to easily switch between gpu profiles without rebooting (depends on how it is configured). Sometimes it can cause issues, so use this as a last resort if the above tools don't work greatly for your hardware.
+To install the tool, you can use the commands below:
+
+```
+Debian/Ubuntu: sudo apt update && sudo apt install curl git build-essential
+
+Fedora/RHEL: sudo dnf upgrade && sudo dnf install curl git && sudo dnf groupinstall "Development Tools"
+
+Arch/Manjaro: sudo pacman -Syu && sudo pacman -S curl git base-devel
+```
+More details here:
+https://gitlab.com/asus-linux/supergfxctl
+## Prime-Select
+Usually found in distributions based off Ubuntu. It is barebones and may break your system if you switch graphics on newer devices.
+## Optimus-manager
+A tool that gives you the best customization for hybrid graphics switching. Not recommended if you don't know what to choose in the GUI app (or in general). Can be quite powerful if configured properly. It is outdated.
+More details here:
+https://github.com/Askannz/optimus-manager
+
+
+[10/5/2023 2:23 PM] tendotechmo
+# * __General bugs and fixes__
+## No sound
+1. Use kernel 6.7.1+
+2. Clone and install the `linux-firmware` if it's not included in your distro:
+```
+  git clone https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/
+  cd linux-firmware
+  sh ./copy-firmware.sh -v tmp
+  sudo mv tmp/cirrus /lib/firmware/
+  cd ..
+  rm -r linux-firmware
+```
+## Dynamic Boost on NVIDIA gpu
+1. Install the Lenovo Legion linux drivers.
+2. Enable powerd by typing the following command:
+```sudo systemctl enable nvidia-powerd.service && sudo systemctl start nvidia-powerd.service```
+## ACPI errors
+Type the following command:
+```
+# For systemd-boot
+sudo kernelstub -a 'acpi_osi="Linux"'
+# For GRUB
+sudo nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT='... acpi_osi="Linux"'
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+**Reboot after applying these tweaks!**
+This tells your hardware that you are using a non-Windows operating OS. If this doesn't fix your issue, change **"linux"** to **"!Windows2020"**
+## Can't switch refresh rate
+Some screen panels will force you to use either the highest or the lowest refresh rate (even keep you at the highest resolution).  A neat hack was found called the **edid method** that tells your screen which resolutions and refresh rates it supports. This is a known problem and has yet to be fixed in the main kernel to this day, as it currently affects not only Legion users, but other laptops.
+## WARNING!
+* **UNDER NO CIRCUMSTANCE, DO NOT INCREASE/DECREASE THE RESOLUTION OF YOUR SCREEN/REFRESH RATE PAST YOUR SPECS! DOING SO WILL CAUSE SEVERE ISSUES. **
+* **This may not fully fix your issue!**
+* **Hybrid graphics only**! Dedicated (nvidia) graphics will ignore the edid.bin file as Nvidia bundles its own edid for whatever reason (need to check a way to force it...)
+* This might create a duplicated 60hz refresh rate. Only one of them both is good. Check which one works and settle with that one if you want to switch refresh rates to save power.
+
+
+[10/5/2023 2:24 PM] tendotechmo
+How to guide :
+1. In WINDOWS, download the CRU tool. Open it, then click on **EXPORT**. Save the file name as edid.bin
+2. Copy the file to a usb drive and boot back to linux.
+3. Open a terminal and type the following commands:
+```
+cd /lib/firmware && sudo mkdir edid
+sudo cp (path to file)/edid.bin /lib/firmware/edid
+```
+4. To make sure your edid file is recognized, type the following:
+```
+If you use an AMD CPU/GPU and you also have freesync, add "amdgpu.freesync_video=1" in systemd-boot/GRUB too. This is mandatory for AMD CPU/GPU.
+
+# For systemd-boot
+sudo kernelstub -a 'drm.edid_firmware=edid/edid.bin'
+# For GRUB (... indicate to not change what is in the line already):
+sudo nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT='... drm.edid_firmware=edid/edid.bin'
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+```
+Reboot and it should work. If not, continue :
+
+5. Run the following command :
+```
+sudo touch /etc/initramfs-tools/hooks/edid && sudo chmod +x /etc/initramfs-tools/hooks/edid && sudo nano /etc/initramfs-tools/hooks/edid
+```
+5a. Paste the following in the txt editor (should pop up after the command)
+```
+#!/bin/sh
+mkdir -p ${DESTDIR}/lib/firmware/edid
+cp /lib/firmware/edid/edid.bin ${DESTDIR}/lib/firmware/edid
+```
+Save your work.
+
+5b. Paste in the terminal :
+```
+sudo update-initramfs -u
+```
+6. Reboot. To check if it worked, type ```dmesg``` in the terminal and find anything related to __edid__. If there are no errors, then problem solved.
+
+
+[10/5/2023 2:24 PM] tendotechmo
+# * __General stuff and misc websites__
+## General stuff
+* Keep your system clean and up to date. Don't bloat it with useless tools or scripts that will cause more harm than good.
+* Don't rely on custom kernels. They MAY increase your performance or decrease it, or come with more power draw which will decrease battery life. Your mileage may vary, as always.
+* Don't run scripts that claim to give you more performance, especially if they were not tested/from a untrusted source/maintainer. They will cause more harm than good.
+* Use systemd-boot if you want your system to boot up faster, but have less customizability. GRUB is the best for customizability but at times can be slower.
+* For gaming, don't rely on Steam's shader compiling option. Mesa introduced GPL which reduces stuttering during gaming on non-native linux games (games running with proton).
+* Disable your desktop environment's [compositor](https://linux-gaming.kwindu.eu/index.php?title=Compositor_(X11))
+
+## Optimize your SSD (optional, but recommended)
+This guide has been carefully extracted from [this website](https://easylinuxtipsproject.blogspot.com/p/ssd.html), as some parts are sadly outdated.
+## 1 : Enable trim
+The best way to enable TRIM is to use fstrim.timer. This will trim your ssd every Monday. Can be configured to do it at your specified date. To enable it, use the following commands:
+```
+sudo systemctl enable fstrim.timer && sudo systemctl start fstrim.timer
+```
+If you want to manually do a trim, use this command:
+```
+sudo fstrim -v /
+```
+The terminal will freeze for a few seconds. Leave your laptop alone while it does its job.
+## 2 : Don't use a swap partition
+Having a swap partition on a SSD will reduce the life cycle as it will cause significant read and write cycles. If you have a swap partition, reduce swapiness to increase SSD lifespan.
+
+{Embed}
+https://linux-gaming.kwindu.eu/index.php?title=Compositor_(X11)
+Index.php
+
+
+[10/5/2023 2:25 PM] tendotechmo
+## 2a : Rely on Zram
+If you really need a SWAP "partition", you can use Zram. This should be already enabled on many mainstream distros (Fedora, Pop_OS, Ubuntu etc)
+## 3 : Browser optimization
+### Firefox
+In a new firefox page, type in the address bar:
+```
+about:config
+```
+Then, search for the following and change their values with the ones on the right:
+```
+browser.cache.disk.enable  false
+browser.cache.memory.enable  true
+browser.cache.memory.capacity -1 or 524288
+browser.sessionstore.interval 15000000
+```
+### Chrome/Chromium based browsers
+Disable "Preload pages for faster browsing and searching" in settings.
+
+## 4 : Fstab configuration "noatime" (ADVANCED!!!)
+This is an advanced part. Don't do it unless you know what you are doing and you are careful enough.
+Type this in the terminal :
+```
+sudo sed -i 's/ errors=remount-ro/ noatime,errors=remount-ro/' /etc/fstab
+```
+Make sure to not have any typos, or else you will run into significant issues.
+This should be already included in distros like Pop_Os. If you want to check before running, run the following command:
+```
+sudo nano /etc/fstab
+```
+
+## 5 : Use suspend and remove hibernation
+Suspend should be the default on all distributions. Hibernation is an old technique that uses your HDD to put your laptop to sleep and keep the current system state. For SSDs however, it will decrease their life cycle.
+Suspend-to-ram is the best option and the fastest too. It will also use little to NO power! This should be enabled by default too.
+
+## Websites for gaming verification purposes
+To check if your games work on linux, these two websites will help you keep yourself updated:
+https://areweanticheatyet.com/
+https://www.protondb.com/
+
+## Websites for more linux related stuff (desktops, distributions etc)
+https://linux-gaming.kwindu.eu/index.php?title=Main_Page
+
+These websites are trustable and constantly updated.
+
+
+[11/3/2023 7:34 PM] ghostfella
+Changed the channel name: Linux guide for Legion laptops [Definitive guide]
+
+
+==============================================================
+Exported 18 message(s)
+==============================================================

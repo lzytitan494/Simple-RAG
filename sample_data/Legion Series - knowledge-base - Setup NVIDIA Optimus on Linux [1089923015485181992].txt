@@ -1,0 +1,33 @@
+==============================================================
+Guild: Legion Series
+Channel: 🫂COMMUNITY CONTRIBUTION / knowledge-base / Setup NVIDIA Optimus on Linux
+==============================================================
+
+[3/27/2023 8:14 PM] mrduartept
+This guide that I created on how to setup NVIDIA Optimus laptop on Linux: https://gist.github.com/MrDuartePT/84fd3f126531c5e0873c21911eef55e1
+
+If you are thinking on setting up a windows vm with gpu passthrough you can use this guide after: https://gist.github.com/firelightning13/e530aec3e3a4e15885a10f6c4b7ae021
+Made by: firelightning13
+
+{Embed}
+https://gist.github.com/MrDuartePT/84fd3f126531c5e0873c21911eef55e1
+nvidia-optimus.md
+GitHub Gist: instantly share code, notes, and snippets.
+https://images-ext-1.discordapp.net/external/v2ToTBFZ7zHPk2sQlBt80EaH2hhwBfD3Zdf1J_uxMxs/https/github.githubassets.com/images/modules/gists/gist-og-image.png
+
+{Embed}
+https://gist.github.com/firelightning13/e530aec3e3a4e15885a10f6c4b7ae021
+[GUIDE] GPU Passthrough for Laptop with Fedora
+[GUIDE] GPU Passthrough for Laptop with Fedora. GitHub Gist: instantly share code, notes, and snippets.
+https://images-ext-1.discordapp.net/external/v2ToTBFZ7zHPk2sQlBt80EaH2hhwBfD3Zdf1J_uxMxs/https/github.githubassets.com/images/modules/gists/gist-og-image.png
+
+{Reactions}
+😍 (5) 
+
+[4/17/2023 4:33 AM] mrduartept
+Note: If someone need help report here you can ping me if I take more that a day to answer.
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================
