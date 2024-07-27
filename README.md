@@ -5,6 +5,7 @@ This project implements a Retrieval Augmented Generation (RAG) pipeline for answ
 <p align="center">
 <img src="https://github.com/lzytitan494/Simple-RAG/blob/main/RAG.png" alt="RAG Pipeline Diagram" width="600"/>
 </p>
+
 ### How it Works
 
 1. **Data Extraction and Refinement:**
