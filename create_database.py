@@ -79,4 +79,4 @@ vectorstore = Chroma.from_documents(
     collection_name="RAG_data",
     persist_directory=CHROMA_PATH
 )
-print('Datbase created successfully!')
+print('Database created successfully!')
