@@ -1,4 +1,4 @@
-## Laptop RAG Pipeline with Ollama and ChromaDB
+## LaptopWiki - RAG Pipeline with Ollama and ChromaDB
 
 This project implements a Retrieval Augmented Generation (RAG) pipeline for answering questions about laptop issues. It leverages the Laptop Wiki community as a knowledge base and uses powerful open-source language models from Ollama for information extraction and question answering.
 
